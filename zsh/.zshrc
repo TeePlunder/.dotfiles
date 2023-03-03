@@ -139,3 +139,6 @@ alias rest="timer 5m && terminal-notifier -message 'Pomodoro'\
 # alias for lazygit & lazydocker
 alias lzd='lazydocker'
 alias lg='lazygit'
+
+source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
