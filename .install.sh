@@ -23,3 +23,8 @@ echo "Changing macOS defaults..."
 defaults write com.apple.dock autohide -bool true
 defaults write com.apple.Finder AppleShowAllFiles -bool true
 
+# Copying and checking out configuration files
+echo "Planting Configuration Files..."
+[ ! -d "$HOME/.dotfiles" ] && git clone --bare git@github.com:TeePlunder/.dotfiles.git $HOME/.dotfiles
+git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME checkout main
+
