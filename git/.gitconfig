@@ -1,0 +1,14 @@
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[user]
+	name = TeePlunder
+	email = leon.bergmann23@gmail.com
+[init]
+	defaultBranch = main
+[core]
+	autocrlf = input
+[credential]
+	helper = osxkeychain
