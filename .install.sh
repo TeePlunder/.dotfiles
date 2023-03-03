@@ -18,3 +18,8 @@ echo "Installing Brew Casks..."
 brew install --cask spotify
 brew install --cask font-hack-nerd-font
 
+# macOS Settings
+echo "Changing macOS defaults..."
+defaults write com.apple.dock autohide -bool true
+defaults write com.apple.Finder AppleShowAllFiles -bool true
+
