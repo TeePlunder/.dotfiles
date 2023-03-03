@@ -30,9 +30,11 @@ echo "Planting Configuration Files..."
 git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME checkout main
 
 # Installing Fonts
+echo "Installing Fonts"
 git clone git@github.com:shaunsingh/SFMono-Nerd-Font-Ligaturized.git /tmp/SFMono_Nerd_Font
 mv /tmp/SFMono_Nerd_Font/* $HOME/Library/Fonts
 rm -rf /tmp/SFMono_Nerd_Font/
+
 
 curl -L https://github.com/kvndrsslr/sketchybar-app-font/releases/download/v1.0.4/sketchybar-app-font.ttf -o $HOME/Library/Fonts/sketchybar-app-font.ttf
 
