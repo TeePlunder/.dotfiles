@@ -16,7 +16,8 @@ brew install zsh-syntax-highlighting
 # Brew Casks
 echo "Installing Brew Casks..."
 brew install --cask spotify
-brew install --cask font-hack-nerd-font
+brew install --cask font-hack-nerd-font # for sketchybar
+brew install --cask sf-symbols # for sketchybar
 
 # macOS Settings
 echo "Changing macOS defaults..."
