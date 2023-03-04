@@ -33,6 +33,7 @@ bar=(
   padding_left=$BAR_PEDDING
   y_offset=$BAR_MARGINS
   margin=$BAR_MARGINS
+  corner_radius=10
 )
 
 sketchybar --bar "${bar[@]}"
