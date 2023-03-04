@@ -6,5 +6,5 @@ wifi=(
     update_freq=5
 )
 
-sketchybar --add item wifi right                         \
-           --set wifi "${wifi[@]}"
+sketchybar --add item wifi right \
+    --set wifi "${wifi[@]}"
