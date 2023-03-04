@@ -25,3 +25,15 @@ export POPUP_BACKGROUND_COLOR=0xff1e1e2e
 export POPUP_BORDER_COLOR=$WHITE
 
 export SHADOW_COLOR=$BLACK
+
+# Battery Colors
+export BATTERY_COLOR_100=$GREEN
+export BATTERY_COLOR_90=0xffb3dca0
+export BATTERY_COLOR_80=0xffb9e1a5
+export BATTERY_COLOR_70=0xffc0e6aa
+export BATTERY_COLOR_60=0xffc7ebaf
+export BATTERY_COLOR_50=0xffcdefb4
+export BATTERY_COLOR_40=0xffd4f4b9
+export BATTERY_COLOR_30=0xffdbe9be
+export BATTERY_COLOR_20=0xffe2dec4
+export BATTERY_COLOR_10=$RED
