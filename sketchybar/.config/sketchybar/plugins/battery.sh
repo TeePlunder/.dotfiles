@@ -16,7 +16,7 @@ COLOR=$WHITE
 case ${PERCENTAGE} in
   9[0-9]|100) ICON=$BATTERY_100; DRAWING=off
   ;;
-  [6-8][0-9]) ICON=$BATTERY_75; DRAWING=off
+  [6-8][0-9]) ICON=$BATTERY_75; DRAWING=on
   ;;
   [3-5][0-9]) ICON=$BATTERY_50
   ;;
@@ -27,7 +27,7 @@ esac
 
 if [[ $CHARGING != "" ]]; then
   ICON=$BATTERY_CHARGING
-  DRAWING=off
+  DRAWING=on
 fi
 
 sketchybar --set $NAME drawing=$DRAWING icon="$ICON" icon.color=$COLOR
