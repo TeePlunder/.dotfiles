@@ -9,8 +9,7 @@ zen_on() {
              --set front_app drawing=off \
              --set volume_icon drawing=off \
              --set spotify.anchor drawing=off \
-             --set spotify.play updates=off \
-             --set brew drawing=off
+             --set spotify.play updates=off 
 }
 
 zen_off() {
@@ -21,8 +20,7 @@ zen_off() {
              --set separator drawing=on \
              --set front_app drawing=on \
              --set volume_icon drawing=on \
-             --set spotify.play updates=on \
-             --set brew drawing=on
+             --set spotify.play updates=on 
 }
 
 if [ "$1" = "on" ]; then
