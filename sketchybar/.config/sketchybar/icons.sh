@@ -59,6 +59,7 @@ VOLUME_33=􀊥
 VOLUME_10=􀊡
 VOLUME_0=􀊣
 
-# Wifi Icons
+# Network Icons
 WIFI_CONNECTED=󰖩
 WIFI_DISCONNECTED=󰖪
+ETHERNET=󰈀
