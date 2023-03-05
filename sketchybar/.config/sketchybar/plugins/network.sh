@@ -15,7 +15,7 @@ setWifi() {
 }
 
 setEthernet() {
-  sketchybar --set $NAME label="test" icon=$ETHERNET
+  sketchybar --set $NAME label="" icon=$ETHERNET
 }
 
 INTERFACE=$(route get example.com | grep interface | grep -o "en[0-9]\+")
