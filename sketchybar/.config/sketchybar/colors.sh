@@ -28,12 +28,12 @@ export SHADOW_COLOR=$BLACK
 
 # Battery Colors
 export BATTERY_COLOR_100=$GREEN
-export BATTERY_COLOR_90=0xffb3dca0
-export BATTERY_COLOR_80=0xffb9e1a5
-export BATTERY_COLOR_70=0xffc0e6aa
-export BATTERY_COLOR_60=0xffc7ebaf
-export BATTERY_COLOR_50=0xffcdefb4
-export BATTERY_COLOR_40=0xffd4f4b9
-export BATTERY_COLOR_30=0xffdbe9be
-export BATTERY_COLOR_20=0xffe2dec4
+export BATTERY_COLOR_90=0xffa6da95
+export BATTERY_COLOR_80=0xffc6e4a4
+export BATTERY_COLOR_70=0xffe4deb3
+export BATTERY_COLOR_60=0xffeed49f
+export BATTERY_COLOR_50=$YELLOW
+export BATTERY_COLOR_40=0xffeed09f
+export BATTERY_COLOR_30=0xffeda59b
+export BATTERY_COLOR_20=0xffed8796
 export BATTERY_COLOR_10=$RED
