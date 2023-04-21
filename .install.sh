@@ -44,3 +44,7 @@ curl -L https://github.com/kvndrsslr/sketchybar-app-font/releases/download/v1.0.
 # Start Services
 echo "Starting Services (grant permissions)..."
 brew services start sketchybar
+
+# Install Colorls
+echo "Install Colorls"
+gem install colorls
