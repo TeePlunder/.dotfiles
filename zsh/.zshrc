@@ -82,7 +82,8 @@ PROMPT='%m:%1~ %n%#'
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
   git
-  zsh-autosuggestions)
+  zsh-autosuggestions
+  web-search)
 
 source $ZSH/oh-my-zsh.sh
 
