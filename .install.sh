@@ -15,6 +15,7 @@ brew install jq
 brew install sketchybar
 brew install zsh-autosuggestions
 brew install zsh-syntax-highlighting
+brew install tmux
 
 # Brew Casks
 echo "Installing Brew Casks..."
@@ -22,6 +23,7 @@ brew install --cask spotify
 brew install --cask font-hack-nerd-font # for sketchybar
 brew install --cask sf-symbols          # for sketchybar
 brew install --cask font-jetbrains-mono-nerd-font
+brew install --cask unnaturalscrollwheels
 
 # macOS Settings
 echo "Changing macOS defaults..."
