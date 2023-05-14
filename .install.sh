@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # Install Brew
 echo "Installing Brew..."
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
@@ -24,6 +26,10 @@ brew install --cask font-hack-nerd-font # for sketchybar
 brew install --cask sf-symbols          # for sketchybar
 brew install --cask font-jetbrains-mono-nerd-font
 brew install --cask unnaturalscrollwheels
+
+# Git Installs
+run git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+
 
 # macOS Settings
 echo "Changing macOS defaults..."
