@@ -17,7 +17,7 @@ brew install jq
 brew install sketchybar
 brew install zsh-autosuggestions
 brew install zsh-syntax-highlighting
-brew install tmux
+brew install zellij
 
 # Brew Casks
 echo "Installing Brew Casks..."
