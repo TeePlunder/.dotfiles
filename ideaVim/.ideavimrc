@@ -11,6 +11,9 @@ set scrolloff=5
 set relativenumber number
 set scrolloff=10
 
+"" Clipboard settings
+set clipboard+=unnamed 
+
 " Do incremental searching.
 set incsearch
 
