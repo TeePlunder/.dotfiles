@@ -87,7 +87,7 @@ plugins=(
 
 source $ZSH/oh-my-zsh.sh
 
-typeset -g POWERLEVEL9K_INSTANT_PROMPT=quiet
+typeset -g POWERLEVEL9K_INSTANT_PROMPT=off
 
 # User configuration
 
