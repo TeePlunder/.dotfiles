@@ -39,7 +39,7 @@ PROMPT='%m:%1~ %n%#'
 # zstyle ':omz:update' mode reminder  # just remind me to update when it's time
 
 # Uncomment the following line to change how often to auto-update (in days).
-# zstyle ':omz:update' frequency 13
+zstyle ':omz:update' frequency 13
 
 # Uncomment the following line if pasting URLs and other text is messed up.
 # DISABLE_MAGIC_FUNCTIONS="true"
@@ -70,7 +70,7 @@ PROMPT='%m:%1~ %n%#'
 # "mm/dd/yyyy"|"dd.mm.yyyy"|"yyyy-mm-dd"
 # or set a custom format using the strftime function format specifications,
 # see 'man strftime' for details.
-# HIST_STAMPS="mm/dd/yyyy"
+HIST_STAMPS="dd.mm.yyyy"
 
 # Would you like to use another custom folder than $ZSH/custom?
 # ZSH_CUSTOM=/path/to/new-custom-folder
@@ -150,3 +150,16 @@ complete -o nospace -C /opt/homebrew/bin/terraform terraform
 
 # To customize prompt, run `p10k configure` or edit ~/.dotfiles/p10k/.p10k.zsh.
 [[ ! -f ~/.dotfiles/p10k/.p10k.zsh ]] || source ~/.dotfiles/p10k/.p10k.zsh
+
+bindkey "^[[1;5C" forward-word
+bindkey "^[[1;5D" backward-word
+
+## Screenshots
+
+_provide a preview of the design changes you made_
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/leonbergmann/Downloads/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/leonbergmann/Downloads/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/leonbergmann/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/leonbergmann/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
