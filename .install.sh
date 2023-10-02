@@ -18,6 +18,8 @@ brew install sketchybar
 brew install zsh-autosuggestions
 brew install zsh-syntax-highlighting
 brew install zellij
+# C Compiler
+brew install gcc
 
 # Brew Casks
 echo "Installing Brew Casks..."
