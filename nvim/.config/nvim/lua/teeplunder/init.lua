@@ -1,2 +1,2 @@
 require("teeplunder.remap")
-print("hello from teeplunder")
+require("teeplunder.set")
