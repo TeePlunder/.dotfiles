@@ -143,6 +143,9 @@ alias lg='lazygit'
 alias c='clear'
 alias ls='colorls'
 
+# alias for neovim
+alias vim='nvim'
+
 source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 autoload -U +X bashcompinit && bashcompinit
