@@ -79,10 +79,20 @@ _G.packer_plugins = {
     path = "/Users/leonbergmann/.local/share/nvim/site/pack/packer/start/gruvbox.nvim",
     url = "https://github.com/ellisonleao/gruvbox.nvim"
   },
+  ["nvim-treesitter"] = {
+    loaded = true,
+    path = "/Users/leonbergmann/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
+    url = "https://github.com/nvim-treesitter/nvim-treesitter"
+  },
   ["packer.nvim"] = {
     loaded = true,
     path = "/Users/leonbergmann/.local/share/nvim/site/pack/packer/start/packer.nvim",
     url = "https://github.com/wbthomason/packer.nvim"
+  },
+  playground = {
+    loaded = true,
+    path = "/Users/leonbergmann/.local/share/nvim/site/pack/packer/start/playground",
+    url = "https://github.com/nvim-treesitter/playground"
   },
   ["plenary.nvim"] = {
     loaded = true,
