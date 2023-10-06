@@ -5,7 +5,7 @@ vim.cmd [[packadd packer.nvim]]
 
 return require('packer').startup(function(use)
   -- Packer can manage itself
-  use 'wbthomason/packer.nvim'
+  use ('wbthomason/packer.nvim')
 
   use {
 	  'nvim-telescope/telescope.nvim', tag = '0.1.3',
@@ -48,10 +48,17 @@ return require('packer').startup(function(use)
           "nvim-lua/plenary.nvim",
       },
   })
-  use {
+  use ({
       'numToStr/Comment.nvim',
       config = function()
           require('Comment').setup()
       end
-  }
+  })
+  use({
+      "jose-elias-alvarez/null-ls.nvim",
+      config = function()
+          require("null-ls").setup()
+      end,
+      requires = { "nvim-lua/plenary.nvim" },
+  })
 end)
