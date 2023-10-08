@@ -181,6 +181,11 @@ _G.packer_plugins = {
     path = "/Users/leonbergmann/.local/share/nvim/site/pack/packer/start/plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
   },
+  ["renamer.nvim"] = {
+    loaded = true,
+    path = "/Users/leonbergmann/.local/share/nvim/site/pack/packer/start/renamer.nvim",
+    url = "https://github.com/filipdutescu/renamer.nvim"
+  },
   ["telescope.nvim"] = {
     loaded = true,
     path = "/Users/leonbergmann/.local/share/nvim/site/pack/packer/start/telescope.nvim",

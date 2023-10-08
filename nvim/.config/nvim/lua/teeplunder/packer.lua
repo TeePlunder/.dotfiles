@@ -123,4 +123,11 @@ return require('packer').startup(function(use)
     --         dapui.close()
     --     end
     -- end}
+    
+    use {
+      'filipdutescu/renamer.nvim',
+      branch = 'master',
+      requires = { {'nvim-lua/plenary.nvim'} }
+    }
+
 end)
