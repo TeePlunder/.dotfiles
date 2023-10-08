@@ -83,4 +83,44 @@ return require('packer').startup(function(use)
             end,
             requires = { "nvim-lua/plenary.nvim" },
         })
-    end)
+        use {
+            "williamboman/mason.nvim",
+            "jay-babu/mason-nvim-dap.nvim",
+        }
+        use 'mfussenegger/nvim-dap'
+        use 'rcarriga/nvim-dap-ui'
+
+    --     use {"mfussenegger/nvim-dap",
+    --     event = "VimEnter",
+    --     config = function()
+    --         local M = {}
+    --         M.dap ={
+    --             plugin = true,
+    --             n = {
+    --                 ["<leader>db"] = {
+    --                     "<cmd> DapToggleBreakpoint <CR>",
+    --                     "Add breakpoint at line",
+    --                 },
+    --                 ["<leader>dr"] = {
+    --                     "<cmd> DapContinue <CR>",
+    --                     "Start or continue the debugger",
+    --                 }
+    --             }
+    --         }
+    --     end
+    -- }
+    --
+    -- use { "rcarriga/nvim-dap-ui", requires = {"mfussenegger/nvim-dap"},event = 'VimEnter', module = 'dapui',
+    -- config = function()
+    --     local dap, dapui = require("dap"), require("dapui")
+    --     dap.listeners.after.event_initialized["dapui_config"] = function()
+    --         dapui.open()
+    --     end
+    --     dap.listeners.before.event_terminated["dapui_config"] = function()
+    --         dapui.close()
+    --     end
+    --     dap.listeners.before.event_exited["dapui_config"] = function()
+    --         dapui.close()
+    --     end
+    -- end}
+end)
