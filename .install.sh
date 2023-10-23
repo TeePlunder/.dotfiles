@@ -18,6 +18,8 @@ brew install sketchybar
 brew install zsh-autosuggestions
 brew install zsh-syntax-highlighting
 brew install zellij
+brew install koekeishiya/formulae/yabai
+brew install koekeishiya/formulae/skhd
 # C Compiler
 brew install gcc
 
@@ -108,6 +110,8 @@ curl -L https://github.com/kvndrsslr/sketchybar-app-font/releases/download/v1.0.
 # Start Services
 echo "Starting Services (grant permissions)..."
 brew services start sketchybar
+yabai --start-service
+skhd --start-service
 
 # Install Colorls
 echo "Install Colorls"
