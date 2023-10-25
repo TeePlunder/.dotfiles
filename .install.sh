@@ -22,7 +22,10 @@ brew install koekeishiya/formulae/yabai
 brew install koekeishiya/formulae/skhd
 brew install exa
 brew install starship
-# C Compiler
+brew install bat
+brew install fzf
+brew install zoxide 
+#.dotfiles C Compiler
 brew install gcc
 
 # Brew Casks

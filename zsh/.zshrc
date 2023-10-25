@@ -79,3 +79,9 @@ bindkey "^[[1;5D" backward-word
 
 eval "$(starship init zsh)"
 export STARSHIP_CONFIG=$HOME/.config/starship/starship.toml
+
+eval "$(zoxide init zsh)"
+
+eval $(brew --prefix)/opt/fzf/install
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
