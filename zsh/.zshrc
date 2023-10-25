@@ -74,4 +74,4 @@ bindkey "^[[1;5D" backward-word
 # if [ -f '/Users/leonbergmann/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/leonbergmann/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
 
 eval "$(starship init zsh)"
-# export STARSHIP_CONFIG=$HOME/.config/starship.toml
+export STARSHIP_CONFIG=$HOME/.config/starship/starship.toml
