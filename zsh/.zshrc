@@ -44,11 +44,6 @@ fi
 #
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
-
-
-# Load Angular CLI autocompletion.
-source <(ng completion script)
 
 # pnpm
 export PNPM_HOME="/Users/leonbergmann/Library/pnpm"
@@ -69,20 +64,14 @@ source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 autoload -U +X bashcompinit && bashcompinit
 complete -o nospace -C /opt/homebrew/bin/terraform terraform
 
-# # To customize prompt, run `p10k configure` or edit ~/.dotfiles/p10k/.p10k.zsh.
-# [[ ! -f ~/.dotfiles/p10k/.p10k.zsh ]] || source ~/.dotfiles/p10k/.p10k.zsh
-
 bindkey "^[[1;5C" forward-word
 bindkey "^[[1;5D" backward-word
 
-## Screenshots
-
-# _provide a preview of the design changes you made_
-
-# The next line updates PATH for the Google Cloud SDK.
-if [ -f '/Users/leonbergmann/Downloads/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/leonbergmann/Downloads/google-cloud-sdk/path.zsh.inc'; fi
-
-# The next line enables shell command completion for gcloud.
-if [ -f '/Users/leonbergmann/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/leonbergmann/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
+# # The next line updates PATH for the Google Cloud SDK.
+# if [ -f '/Users/leonbergmann/Downloads/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/leonbergmann/Downloads/google-cloud-sdk/path.zsh.inc'; fi
+#
+# # The next line enables shell command completion for gcloud.
+# if [ -f '/Users/leonbergmann/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/leonbergmann/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
 
 eval "$(starship init zsh)"
+# export STARSHIP_CONFIG=$HOME/.config/starship.toml
