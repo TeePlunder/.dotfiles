@@ -54,10 +54,14 @@ export PATH="$PNPM_HOME:$PATH"
 alias lzd='lazydocker'
 alias lg='lazygit'
 alias c='clear'
-alias ls='colorls'
 
 # alias for neovim
 alias n='nvim'
+
+# alias for basic cmds
+alias ls ='exa'
+alias ll='exa -alh'
+alias tree='exa --tree'
 
 source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
