@@ -59,9 +59,10 @@ alias c='clear'
 alias n='nvim'
 
 # alias for basic cmds
-alias ls ='exa'
+alias ls='exa'
 alias ll='exa -alh'
 alias tree='exa --tree'
+alias ..="cd .."
 
 source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
@@ -82,6 +83,6 @@ export STARSHIP_CONFIG=$HOME/.config/starship/starship.toml
 
 eval "$(zoxide init zsh)"
 
-eval $(brew --prefix)/opt/fzf/install
-
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+# eval $(brew --prefix)/opt/fzf/install
+#
+# [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
