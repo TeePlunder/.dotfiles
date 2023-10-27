@@ -25,6 +25,8 @@ brew install starship
 brew install bat
 brew install fzf
 brew install zoxide 
+brew install entr
+
 #.dotfiles C Compiler
 brew install gcc
 
