@@ -60,6 +60,7 @@ alias n='nvim'
 
 # alias for basic cmds
 alias ls='exa'
+alias la='exa -a'
 alias ll='exa -alh'
 alias tree='exa --tree'
 alias ..="cd .."
