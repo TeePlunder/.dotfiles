@@ -1,40 +1,64 @@
 #!/bin/bash
 
-# Install Brew
-echo "Installing Brew..."
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-brew analytics off
+# ask which shell
+echo -n "Which package manager do you want to use? => "
+read -r pm
 
-## Brew tabs
-brew tap homebrew/cask-fonts
+# PMC = Package Manager Command
+case $pm in
+  brew )
+    PMC="$pm install" 
+  ;;
+  pacman)
+    PMC="$pm -S"
+    ;;
+  *)
+    echo "package manager not in install file"
+    exit 1;
+    ;;
+esac
 
-# Brew Formulare
-echo "Installing Brew Formulare..."
-brew install neofetch
-brew install lazygit
-brew install lazydocker
-brew install jq
-brew install sketchybar
-brew install zsh-autosuggestions
-brew install zsh-syntax-highlighting
-brew install zellij
-brew install koekeishiya/formulae/yabai
-brew install koekeishiya/formulae/skhd
-brew install exa
-brew install starship
-brew install bat
-brew install fzf
-brew install zoxide 
-brew install entr
+if [ $pm == "brew" ]; then
+  # Install Brew
+  echo "Installing Brew..."
+  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+  brew analytics off
 
-#.dotfiles C Compiler
-brew install gcc
+  ## Brew tabs
+  brew tap homebrew/cask-fonts
 
-# Brew Casks
-echo "Installing Brew Casks..."
-brew install --cask spotify
-brew install --cask sf-symbols # for sketchybar
-brew install --cask unnaturalscrollwheels
+  # Brew Casks
+  echo "Installing Brew Casks..."
+  brew install --cask spotify
+  brew install --cask sf-symbols # for sketchybar
+  brew install --cask unnaturalscrollwheels
+fi
+
+packageList=(
+  neofetch
+  lazygit
+  lazydocker
+  jq 
+  sketchybar
+  zsh-autosuggestions
+  zsh-syntax-highlighting
+  zellij
+  koekeishiya/formulae/yabai
+  koekeishiya/formulae/skhd
+  exa
+  starship
+  bat
+  fzf
+  zoxide 
+  entr
+  gcc
+  )
+
+echo "Install all packages"
+for package in "${packageList[@]}"; do
+  $PM "$package"
+done
+
 
 echo "Installing nerd fonts..."
 fonts_list=(
@@ -90,29 +114,34 @@ fonts_list=(
   font-victor-mono-nerd-font
 )
 
-brew tap homebrew/cask-fonts
+if [ "$pm" == "brew" ]; then
+  brew tap homebrew/cask-fonts
 
-for font in "${fonts_list[@]}"; do
-  brew install --cask "$font"
-done
+  for font in "${fonts_list[@]}"; do
+   brew install --cask "$font"
+  done
+fi
+
 
 # macOS Settings
 echo "Changing macOS defaults..."
 defaults write com.apple.dock autohide -bool true
 defaults write com.apple.Finder AppleShowAllFiles -bool true
+defaults write com.apple.finder "ShowPathbar" -bool "true"
+killall Finder
 
 # Copying and checking out configuration files
 echo "Planting Configuration Files..."
-[ ! -d "$HOME/.dotfiles" ] && git clone --bare git@github.com:TeePlunder/.dotfiles.git $HOME/.dotfiles
-git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME checkout main
+[ ! -d "$HOME/.dotfiles" ] && git clone --bare git@github.com:TeePlunder/.dotfiles.git "$HOME"/.dotfiles
+git --git-dir="$HOME"/.dotfiles/ --work-tree="$HOME" checkout main
 
 # Installing Fonts
 echo "Installing Fonts"
 git clone git@github.com:shaunsingh/SFMono-Nerd-Font-Ligaturized.git /tmp/SFMono_Nerd_Font
-mv /tmp/SFMono_Nerd_Font/* $HOME/Library/Fonts
+mv /tmp/SFMono_Nerd_Font/* "$HOME"/Library/Fonts
 rm -rf /tmp/SFMono_Nerd_Font/
 
-curl -L https://github.com/kvndrsslr/sketchybar-app-font/releases/download/v1.0.4/sketchybar-app-font.ttf -o $HOME/Library/Fonts/sketchybar-app-font.ttf
+curl -L https://github.com/kvndrsslr/sketchybar-app-font/releases/download/v1.0.4/sketchybar-app-font.ttf -o "$HOME"/Library/Fonts/sketchybar-app-font.ttf
 
 # Start Services
 echo "Starting Services (grant permissions)..."
