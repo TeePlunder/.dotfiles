@@ -52,6 +52,7 @@ packageList=(
   zoxide 
   entr
   gcc
+  1password-cli
   )
 
 echo "Install all packages"

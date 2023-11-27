@@ -90,3 +90,5 @@ eval "$(zoxide init zsh)"
 # eval $(brew --prefix)/opt/fzf/install
 #
 # [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+eval "$(op completion zsh)"; compdef _op op
