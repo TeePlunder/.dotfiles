@@ -187,6 +187,11 @@ _G.packer_plugins = {
     path = "/Users/leonbergmann/.local/share/nvim/site/pack/packer/start/telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
   },
+  ["twilight.nvim"] = {
+    loaded = true,
+    path = "/Users/leonbergmann/.local/share/nvim/site/pack/packer/start/twilight.nvim",
+    url = "https://github.com/folke/twilight.nvim"
+  },
   undotree = {
     loaded = true,
     path = "/Users/leonbergmann/.local/share/nvim/site/pack/packer/start/undotree",
@@ -196,18 +201,23 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/leonbergmann/.local/share/nvim/site/pack/packer/start/vim-fugitive",
     url = "https://github.com/tpope/vim-fugitive"
+  },
+  ["zen-mode.nvim"] = {
+    loaded = true,
+    path = "/Users/leonbergmann/.local/share/nvim/site/pack/packer/start/zen-mode.nvim",
+    url = "https://github.com/folke/zen-mode.nvim"
   }
 }
 
 time([[Defining packer_plugins]], false)
--- Config for: Comment.nvim
-time([[Config for Comment.nvim]], true)
-try_loadstring("\27LJ\2\n5\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\fComment\frequire\0", "config", "Comment.nvim")
-time([[Config for Comment.nvim]], false)
 -- Config for: null-ls.nvim
 time([[Config for null-ls.nvim]], true)
 try_loadstring("\27LJ\2\nH\0\0\4\0\6\0\t6\0\0\0009\0\1\0009\0\2\0009\0\3\0005\2\4\0006\3\5\0=\3\5\2B\0\2\1K\0\1\0\vbufnur\1\0\0\vformat\bbuf\blsp\bvimõ\1\1\2\a\1\14\0\0259\2\0\0'\4\1\0B\2\2\2\15\0\2\0X\3\19€6\2\2\0009\2\3\0029\2\4\0025\4\5\0-\5\0\0=\5\6\4=\1\a\4B\2\2\0016\2\2\0009\2\3\0029\2\b\2'\4\t\0005\5\n\0-\6\0\0=\6\v\5=\1\a\0053\6\f\0=\6\r\5B\2\3\1K\0\1\0\0À\rcallback\0\ngroup\1\0\0\16BufWritePre\24nvim_create_autocmd\vbuffer\ngrouo\1\0\0\24nvim_clear_autocmds\bapi\bvim\28textDocument/formatting\21supports_methoddÈ\1\1\0\5\0\r\0\0206\0\0\0009\0\1\0009\0\2\0'\2\3\0004\3\0\0B\0\3\0026\1\4\0'\3\5\0B\1\2\0025\2\t\0004\3\3\0009\4\6\0019\4\a\0049\4\b\4>\4\1\3=\3\n\0023\3\v\0=\3\f\0022\0\0€L\2\2\0\14on_attach\0\fsources\1\0\0\17clang_format\15formatting\rbuiltins\fnull-ls\frequire\18LspFormatting\24nvim_create_augroup\bapi\bvim\0", "config", "null-ls.nvim")
 time([[Config for null-ls.nvim]], false)
+-- Config for: Comment.nvim
+time([[Config for Comment.nvim]], true)
+try_loadstring("\27LJ\2\n5\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\fComment\frequire\0", "config", "Comment.nvim")
+time([[Config for Comment.nvim]], false)
 
 _G._packer.inside_compile = false
 if _G._packer.needs_bufread == true then
