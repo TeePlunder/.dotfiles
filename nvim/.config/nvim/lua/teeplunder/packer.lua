@@ -95,4 +95,6 @@ return require('packer').startup(function(use)
   use {
     "folke/twilight.nvim", 'folke/zen-mode.nvim'
   }
+  use 'neovim/nvim-lspconfig'
+  use 'sigmasd/deno-nvim'
 end)
