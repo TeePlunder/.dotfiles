@@ -95,6 +95,11 @@ _G.packer_plugins = {
     path = "/Users/leonbergmann/.local/share/nvim/site/pack/packer/start/cmp-nvim-lua",
     url = "https://github.com/hrsh7th/cmp-nvim-lua"
   },
+  ["deno-nvim"] = {
+    loaded = true,
+    path = "/Users/leonbergmann/.local/share/nvim/site/pack/packer/start/deno-nvim",
+    url = "https://github.com/sigmasd/deno-nvim"
+  },
   ["friendly-snippets"] = {
     loaded = true,
     path = "/Users/leonbergmann/.local/share/nvim/site/pack/packer/start/friendly-snippets",
