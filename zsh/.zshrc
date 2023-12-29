@@ -91,5 +91,5 @@ eval "$(zoxide init zsh)"
 #
 # [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-eval "$(op completion zsh)"; compdef _op op
+# eval "$(op completion zsh)"; compdef _op op
 source ~/.config/op/plugins.sh
