@@ -86,6 +86,7 @@ eval "$(starship init zsh)"
 export STARSHIP_CONFIG=$HOME/.config/starship/starship.toml
 
 eval "$(zoxide init zsh)"
+eval "$(fzf --zsh)"
 
 # eval $(brew --prefix)/opt/fzf/install
 #
@@ -93,3 +94,5 @@ eval "$(zoxide init zsh)"
 
 # eval "$(op completion zsh)"; compdef _op op
 source ~/.config/op/plugins.sh
+
+export PATH="$PATH:/home/leonbergmann/.local/bin"
