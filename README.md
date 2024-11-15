@@ -1,1 +1,1 @@
-TODO
+Just run `stow .`
