@@ -15,6 +15,12 @@
       environment.systemPackages =
         [ 
             pkgs.neovim
+            pkgs.zellij
+            pkgs.lazygit
+            pkgs.lazydocker
+            pkgs.fzf
+            pkgs.bat
+            pggs.exa
         ];
 
       # Auto upgrade nix package and the daemon service.
