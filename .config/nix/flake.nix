@@ -26,6 +26,7 @@
             pkgs.bat
             pkgs.exa
             pkgs.raycast
+            pkgs.obsidian
         ];
 
       fonts.packages = [
