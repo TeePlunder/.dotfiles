@@ -22,6 +22,7 @@
             pkgs.fzf
             pkgs.bat
             pkgs.exa
+            pkgs.raycast
         ];
 
       # Auto upgrade nix package and the daemon service.
