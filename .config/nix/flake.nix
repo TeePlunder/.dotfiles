@@ -29,6 +29,19 @@
             pkgs.obsidian
         ];
 
+      homebrew = {
+        enable = true;
+        casks = [
+          "hammerspoon"
+          "firefox"
+          "iina"
+          "the-unarchiver"
+          "Spark"
+          "arc"
+        ];
+        onActivation.cleanup = "zap";
+      };
+
       fonts.packages = [
         (pkgs.nerdfonts.override { fonts = [ "JetBrainsMono" ]; })
       ];
