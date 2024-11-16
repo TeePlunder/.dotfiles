@@ -50,6 +50,13 @@ stow --adopt .
 Install it using the guide from [Nix-Docs](https://nixos.org/download/). I followed this [video](https://youtu.be/Z8BL8mdzWHI?si=BpJHaY3-7phbASsm)
 
 on Fish you need to run this cmd
+
 ```fish
 curl -L https://nixos.org/nix/install | sh
+```
+
+Restart your shell and run to confirm it is working
+
+```fish
+nix-shell -p neofetch --run neofetch
 ```
