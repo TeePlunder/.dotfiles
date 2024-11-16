@@ -31,6 +31,9 @@
 
       homebrew = {
         enable = true;
+        brews = [
+          "mas" # to install apps from the app store through the cli
+        ];
         casks = [
           "hammerspoon"
           "firefox"
