@@ -43,6 +43,7 @@
           "arc"
         ];
         masApps = {
+            "Phiewer" = 1226444549;
         };
         onActivation.cleanup = "zap";
       };
