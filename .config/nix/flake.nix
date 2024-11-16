@@ -42,6 +42,8 @@
           "Spark"
           "arc"
         ];
+        masApps = {
+        };
         onActivation.cleanup = "zap";
       };
 
