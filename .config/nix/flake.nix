@@ -31,7 +31,7 @@
 
       fonts.packages = [
         (pkgs.nerdfonts.override { fonts = [ "JetBrainsMono" ]; })
-      ]
+      ];
 
       # Fixing Mac Spotlight to get the nix applications like alacritty 
       system.activationScripts.applications.text = let
