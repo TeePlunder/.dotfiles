@@ -20,7 +20,7 @@
             pkgs.lazydocker
             pkgs.fzf
             pkgs.bat
-            pggs.exa
+            pkgs.exa
         ];
 
       # Auto upgrade nix package and the daemon service.
