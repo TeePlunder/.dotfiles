@@ -24,7 +24,6 @@
             pkgs.lazydocker
             pkgs.fzf
             pkgs.bat
-            pkgs.exa
             pkgs.raycast
             pkgs.obsidian
         ];
