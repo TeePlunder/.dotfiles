@@ -44,3 +44,13 @@ stow --adopt .
 ## Tutorial
 
 [The Video](https://youtu.be/y6XCebnB9gs?si=XKJVomggYPDYyLN2)
+
+
+# Nix Package-Manager
+
+Install it using the guide from [Nix-Docs](https://nixos.org/download/). I followed this [video](https://youtu.be/Z8BL8mdzWHI?si=BpJHaY3-7phbASsm)
+
+on Fish you need to run this cmd
+```fish
+curl -L https://nixos.org/nix/install | sh
+```
