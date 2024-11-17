@@ -1,39 +1,38 @@
 #!/bin/bash
 
-# Color Palette
-export BLACK=0xff181926
-export WHITE=0xffcad3f5
-export RED=0xffed8796
-export GREEN=0xffa6da95
-export BLUE=0xff8aadf4
-export YELLOW=0xffeed49f
-export ORANGE=0xfff5a97f
-export MAGENTA=0xffc6a0f6
-export GREY=0xff939ab7
-export TRANSPARENT=0x00000000
+# Gruvbox Color Palette
+export BLACK=0xff282828   # Dark Gray
+export WHITE=0xffebdbb2   # Light Beige
+export RED=0xffcc241d     # Red
+export GREEN=0xff98971a   # Green
+export BLUE=0xff458588    # Blue
+export YELLOW=0xffd79921  # Yellow
+export ORANGE=0xffd65d0e  # Orange
+export MAGENTA=0xffb16286 # Purple/Magenta
+export GREY=0xff928374    # Gray
+export TRANSPARENT=0x00000000 # Fully Transparent
 
-# General bar colors
-# export BAR_COLOR=0xff1e1e2e
-export BAR_COLOR=0xf21e1e2e
-export BAR_BORDER_COLOR=0xff494d64 #0xa024273a
-export ICON_COLOR=$WHITE           # Color of all icons
-export LABEL_COLOR=$WHITE          # Color of all labels
-export BACKGROUND_1=0x603c3e4f
-export BACKGROUND_2=0x60494d64
+# General Bar Colors
+export BAR_COLOR=0xe6282828        # Dark Background
+export BAR_BORDER_COLOR=0xff504945 # Border for contrast
+export ICON_COLOR=$WHITE           # Gruvbox White for icons
+export LABEL_COLOR=$WHITE          # Gruvbox White for labels
+export BACKGROUND_1=0x60282828     # Semi-transparent dark
+export BACKGROUND_2=0x60494644     # Semi-transparent gray
 
-export POPUP_BACKGROUND_COLOR=0xff1e1e2e
-export POPUP_BORDER_COLOR=$WHITE
+export POPUP_BACKGROUND_COLOR=0xff3c3836 # Slightly lighter dark
+export POPUP_BORDER_COLOR=$WHITE         # Gruvbox White for border
 
-export SHADOW_COLOR=$BLACK
+export SHADOW_COLOR=$BLACK               # Gruvbox Black for shadows
 
 # Battery Colors
-export BATTERY_COLOR_100=$GREEN
+export BATTERY_COLOR_100=0xffa6da95
 export BATTERY_COLOR_90=0xffa6da95
 export BATTERY_COLOR_80=0xffc6e4a4
 export BATTERY_COLOR_70=0xffe4deb3
 export BATTERY_COLOR_60=0xffeed49f
-export BATTERY_COLOR_50=$YELLOW
+export BATTERY_COLOR_50=0xffeed49f
 export BATTERY_COLOR_40=0xffeed09f
 export BATTERY_COLOR_30=0xffeda59b
 export BATTERY_COLOR_20=0xffed8796
-export BATTERY_COLOR_10=$RED
+export BATTERY_COLOR_10=0xffed8796
