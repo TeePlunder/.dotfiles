@@ -43,6 +43,7 @@
           "shottr"
           "alt-tab"
           "hiddenbar"
+          "amethyst"
         ];
         masApps = {
             "Phiewer" = 1226444549;
