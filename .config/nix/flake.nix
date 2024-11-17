@@ -40,6 +40,7 @@
           "the-unarchiver"
           "Spark"
           "arc"
+          "shottr"
         ];
         masApps = {
             "Phiewer" = 1226444549;
