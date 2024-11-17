@@ -88,6 +88,7 @@
           "${pkgs.obsidian}/Appliactions/Obsidian.app"
         ];
         finder.FXPreferredViewSystle = "clmv";
+        finder.AppleShowAllFiles = true;
         loginwindow.GuestEnable = false;
         NSGlobalDomain.AppleICUForce24HourTime = true;
         NSGlobalDomain.AppleInterfaceStyle = "Dark";
