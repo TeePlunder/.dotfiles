@@ -90,7 +90,7 @@
         finder.FXPreferredViewStyle = "clmv";
         finder.AppleShowAllFiles = true;
         finder.AppleShowAllExtensions = true;
-        loginwindow.GuestEnable = false;
+        loginwindow.GuestEnabled = false;
         NSGlobalDomain.AppleICUForce24HourTime = true;
         NSGlobalDomain.AppleInterfaceStyle = "Dark";
         NSGlobalDomain.KeyRepeat = 2;
