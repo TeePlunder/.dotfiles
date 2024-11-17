@@ -87,7 +87,7 @@
           "/Appliactions/Spark.app"
           "${pkgs.obsidian}/Appliactions/Obsidian.app"
         ];
-        finder.FXPreferredViewSystle = "clmv";
+        finder.FXPreferredViewStyle = "clmv";
         finder.AppleShowAllFiles = true;
         finder.AppleShowAllExtensions = true;
         loginwindow.GuestEnable = false;
