@@ -61,8 +61,14 @@ Restart your shell and run to confirm it is working
 nix-shell -p neofetch --run neofetch
 ```
 
-## Install / Update packages
+## rebuild cofnig
 
 ```fish
 darwin-rebuild switch --flake ~/.dotfiles/.config/nix#macPro
+```
+
+## update
+
+```fish
+nix flake update
 ```
