@@ -85,6 +85,7 @@
         ];
         finder.FXPreferredViewSystle = "clmv";
         loginwindow.GuestEnable = false;
+        NSGlobalDomain.AppleICUForce24HourTime = true;
       };
 
       # Auto upgrade nix package and the daemon service.
