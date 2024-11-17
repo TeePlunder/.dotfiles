@@ -36,7 +36,6 @@
         ];
         casks = [
           "hammerspoon"
-          "firefox"
           "iina"
           "the-unarchiver"
           "Spark"
