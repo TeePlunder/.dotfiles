@@ -44,6 +44,7 @@
           "alt-tab"
           "hiddenbar"
           "amethyst"
+          "unnaturalscrollwheels"
         ];
         masApps = {
             "Phiewer" = 1226444549;
