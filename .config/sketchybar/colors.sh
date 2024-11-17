@@ -13,7 +13,7 @@ export GREY=0xff928374    # Gray
 export TRANSPARENT=0x00000000 # Fully Transparent
 
 # General Bar Colors
-export BAR_COLOR=0xe6282828        # Dark Background
+export BAR_COLOR=0xe6282828        # 90% - Dark Background
 export BAR_BORDER_COLOR=0xff504945 # Border for contrast
 export ICON_COLOR=$WHITE           # Gruvbox White for icons
 export LABEL_COLOR=$WHITE          # Gruvbox White for labels
