@@ -234,7 +234,7 @@ relaunch-amethyst:
   key: z
 
 # disable screen padding on builtin display
-disable-padding-on-builtin-display: false
+disable-padding-on-builtin-display: true
 
 # Boolean flag for whether or not to add margins between windows (default false).
 window-margins: false
