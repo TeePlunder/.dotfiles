@@ -42,6 +42,7 @@
           "arc"
           "shottr"
           "alt-tab"
+          "hiddenbar"
         ];
         masApps = {
             "Phiewer" = 1226444549;
