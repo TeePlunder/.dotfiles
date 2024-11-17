@@ -89,6 +89,7 @@
         ];
         finder.FXPreferredViewSystle = "clmv";
         finder.AppleShowAllFiles = true;
+        finder.AppleShowAllExtensions = true;
         loginwindow.GuestEnable = false;
         NSGlobalDomain.AppleICUForce24HourTime = true;
         NSGlobalDomain.AppleInterfaceStyle = "Dark";
