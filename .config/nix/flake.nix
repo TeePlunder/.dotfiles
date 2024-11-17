@@ -43,7 +43,6 @@
           "shottr"
           "alt-tab"
           "hiddenbar"
-          "vimmotion"
         ];
         masApps = {
             "Phiewer" = 1226444549;
