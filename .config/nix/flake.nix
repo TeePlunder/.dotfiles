@@ -77,6 +77,12 @@
 
       system.defaults = {
         dock.autohide = true;
+        dock.persistent-apps = [
+          "/Appliactions/Arc.app"
+          "${pkgs.alacritty}/Applications/Alacritty.app"
+          "/Appliactions/Spark.app"
+          "${pkgs.obsidian}/Appliactions/Obsidian.app"
+        ]
       };
 
       # Auto upgrade nix package and the daemon service.
