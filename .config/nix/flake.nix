@@ -84,6 +84,7 @@
           "${pkgs.obsidian}/Appliactions/Obsidian.app"
         ];
         finder.FXPreferredViewSystle = "clmv";
+        loginwindow.GuestEnable = false;
       };
 
       # Auto upgrade nix package and the daemon service.
