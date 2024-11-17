@@ -86,6 +86,7 @@
         finder.FXPreferredViewSystle = "clmv";
         loginwindow.GuestEnable = false;
         NSGlobalDomain.AppleICUForce24HourTime = true;
+        NSGlobalDomain.AppleInterfaceStyle = "Dark";
       };
 
       # Auto upgrade nix package and the daemon service.
