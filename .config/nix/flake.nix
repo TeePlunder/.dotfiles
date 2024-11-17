@@ -87,6 +87,7 @@
         loginwindow.GuestEnable = false;
         NSGlobalDomain.AppleICUForce24HourTime = true;
         NSGlobalDomain.AppleInterfaceStyle = "Dark";
+        NSGlobalDomain.KeyRepeat = 2;
       };
 
       # Auto upgrade nix package and the daemon service.
