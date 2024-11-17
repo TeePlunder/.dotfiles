@@ -81,10 +81,10 @@
       system.defaults = {
         dock.autohide = true;
         dock.persistent-apps = [
-          "/Appliactions/Arc.app"
+          "/Applications/Arc.app"
           "${pkgs.alacritty}/Applications/Alacritty.app"
-          "/Appliactions/Spark.app"
-          "${pkgs.obsidian}/Appliactions/Obsidian.app"
+          "/Applications/Spark.app"
+          "${pkgs.obsidian}/Applications/Obsidian.app"
         ];
         finder.FXPreferredViewStyle = "clmv";
         finder.AppleShowAllFiles = true;
