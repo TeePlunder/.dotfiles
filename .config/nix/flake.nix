@@ -41,6 +41,7 @@
           "Spark"
           "arc"
           "shottr"
+          "alt-tab"
         ];
         masApps = {
             "Phiewer" = 1226444549;
