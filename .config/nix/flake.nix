@@ -45,6 +45,7 @@
           "hiddenbar"
           "amethyst"
           "unnaturalscrollwheels"
+          "zen-browser"
         ];
         masApps = {
             "Phiewer" = 1226444549;
@@ -83,7 +84,7 @@
       system.defaults = {
         dock.autohide = true;
         dock.persistent-apps = [
-          "/Applications/Arc.app"
+          "/Applications/Zen Browser.app"
           "${pkgs.alacritty}/Applications/Alacritty.app"
           "/Applications/Spark.app"
           "${pkgs.obsidian}/Applications/Obsidian.app"
