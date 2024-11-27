@@ -17,6 +17,7 @@
       # $ nix-env -qaP | grep wget
       environment.systemPackages =
         [ 
+            pkgs.alacritty
             pkgs.mkalias
             pkgs.neovim
             pkgs.zellij
