@@ -17,7 +17,6 @@
       # $ nix-env -qaP | grep wget
       environment.systemPackages =
         [ 
-            pkgs.alacritty
             pkgs.mkalias
             pkgs.neovim
             pkgs.zellij
@@ -46,6 +45,7 @@
           "amethyst"
           "unnaturalscrollwheels"
           "zen-browser"
+          "wezterm"
         ];
         masApps = {
             "Phiewer" = 1226444549;
@@ -85,7 +85,7 @@
         dock.autohide = true;
         dock.persistent-apps = [
           "/Applications/Zen Browser.app"
-          "${pkgs.alacritty}/Applications/Alacritty.app"
+          "/Applications/WezTerm.app"
           "/Applications/Spark.app"
           "${pkgs.obsidian}/Applications/Obsidian.app"
         ];
