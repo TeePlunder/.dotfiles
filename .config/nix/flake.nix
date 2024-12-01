@@ -39,7 +39,6 @@
           "iina"
           "the-unarchiver"
           "Spark"
-          "arc"
           "shottr"
           "alt-tab"
           "hiddenbar"
