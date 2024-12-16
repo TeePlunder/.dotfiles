@@ -45,7 +45,6 @@
           "amethyst"
           "unnaturalscrollwheels"
           "zen-browser"
-          "wezterm"
         ];
         masApps = {
             "Phiewer" = 1226444549;
@@ -85,7 +84,7 @@
         dock.autohide = true;
         dock.persistent-apps = [
           "/Applications/Zen Browser.app"
-          "/Applications/WezTerm.app"
+          "${pkgs.alacritty}/Applications/Alacritty.app"
           "/Applications/Spark.app"
           "${pkgs.obsidian}/Applications/Obsidian.app"
         ];
