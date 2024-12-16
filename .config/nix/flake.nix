@@ -45,6 +45,7 @@
           "amethyst"
           "unnaturalscrollwheels"
           "zen-browser"
+          "bruno"
         ];
         masApps = {
             "Phiewer" = 1226444549;
@@ -86,6 +87,7 @@
           "/Applications/Zen Browser.app"
           "${pkgs.alacritty}/Applications/Alacritty.app"
           "/Applications/Spark.app"
+          "/Applications/Bruno.app"
           "${pkgs.obsidian}/Applications/Obsidian.app"
         ];
         finder.FXPreferredViewStyle = "clmv";
