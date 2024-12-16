@@ -26,7 +26,7 @@ background = "0x282828"
 foreground = "0xdfbf8e"
 
 [font]
-size = 16
+size = 14
 
 [font.normal]
 family = "JetBrainsMono NF"
@@ -39,8 +39,8 @@ multiplier = 3
 [window]
 decorations_theme_variant = "None"
 dynamic_title = true
-opacity = 0.9
+opacity = 0.95
 
-[window.padding]
-x = 5
-y = 5
+# [window.padding]
+# x = 5
+# y = 5
