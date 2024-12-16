@@ -33,6 +33,7 @@
         enable = true;
         brews = [
           "mas" # to install apps from the app store through the cli
+          "bruno-cli"
         ];
         casks = [
           "hammerspoon"
