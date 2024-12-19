@@ -91,7 +91,7 @@
         ];
         finder.FXPreferredViewStyle = "clmv";
         finder.AppleShowAllExtensions = true;
-        finder.ShowPathBar = true;
+        finder.ShowPathbar = true;
         finder.ShowStatusBar = true;
         loginwindow.GuestEnabled = false;
         NSGlobalDomain.AppleICUForce24HourTime = true;
