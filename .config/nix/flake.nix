@@ -27,6 +27,7 @@
             pkgs.bat
             pkgs.raycast
             pkgs.obsidian
+            pkgs.vscode
         ];
 
       homebrew = {
@@ -36,9 +37,6 @@
           "bruno-cli"
         ];
         casks = [
-          "hammerspoon"
-          "iina"
-          "the-unarchiver"
           "Spark"
           "shottr"
           "alt-tab"
@@ -93,6 +91,8 @@
         ];
         finder.FXPreferredViewStyle = "clmv";
         finder.AppleShowAllExtensions = true;
+        finder.ShowPathBar = true;
+        finder.ShowStatusBar = true;
         loginwindow.GuestEnabled = false;
         NSGlobalDomain.AppleICUForce24HourTime = true;
         NSGlobalDomain.AppleInterfaceStyle = "Dark";
