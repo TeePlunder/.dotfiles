@@ -45,6 +45,7 @@
           "unnaturalscrollwheels"
           "zen-browser"
           "bruno"
+          "trex"
         ];
         masApps = {
             "Phiewer" = 1226444549;
