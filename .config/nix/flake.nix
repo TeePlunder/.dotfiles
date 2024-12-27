@@ -46,6 +46,7 @@
           "zen-browser"
           "bruno"
           "trex"
+          "ghostty"
         ];
         masApps = {
             "Phiewer" = 1226444549;
@@ -85,7 +86,8 @@
         dock.autohide = true;
         dock.persistent-apps = [
           "/Applications/Zen Browser.app"
-          "${pkgs.alacritty}/Applications/Alacritty.app"
+          "/Applications/Ghostty.app"
+          # "${pkgs.alacritty}/Applications/Alacritty.app"
           "/Applications/Spark.app"
           "/Applications/Bruno.app"
           "${pkgs.obsidian}/Applications/Obsidian.app"
