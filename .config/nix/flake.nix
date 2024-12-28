@@ -47,6 +47,7 @@
           "bruno"
           "trex"
           "ghostty"
+          "raycast"
         ];
         masApps = {
             "Phiewer" = 1226444549;
