@@ -34,7 +34,18 @@
         enable = true;
         brews = [
           "mas" # to install apps from the app store through the cli
+          "neovim"
           "bruno-cli"
+          "lazygit"
+          "lazydocker"
+          "bat"
+          "zoxide"
+          "ripgrep"
+          "curl"
+          "fzf"
+          "cmake"
+          "go"
+          "gh"
         ];
         casks = [
           "shottr"
