@@ -49,9 +49,6 @@
           "raycast"
           "dbeaver-community"
         ];
-        masApps = {
-            "Phiewer" = 1226444549;
-        };
         onActivation.cleanup = "zap";
         onActivation.autoUpdate = true;
         onActivation.upgrade = true;
