@@ -48,6 +48,8 @@
           "gh"
           "openssh"
           "zellij"
+          "docker"
+          "docker-compose"
         ];
         casks = [
           "shottr"
