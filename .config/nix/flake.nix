@@ -61,6 +61,7 @@
           "ghostty"
           "raycast"
           "dbeaver-community"
+          "arc"
         ];
         masApps = {
             "Phiewer" = 1226444549;
@@ -99,7 +100,7 @@
       system.defaults = {
         dock.autohide = true;
         dock.persistent-apps = [
-          "/Applications/Zen Browser.app"
+          "/Applications/Arc.app"
           "/Applications/Ghostty.app"
           # "${pkgs.alacritty}/Applications/Alacritty.app"
           "/Applications/Spark.app"
