@@ -86,7 +86,7 @@
           "/Applications/Zen Browser.app"
           "/Applications/Ghostty.app"
           # "${pkgs.alacritty}/Applications/Alacritty.app"
-          "/Applications/Spark.app"
+          "/Spark.app"
           "/Applications/Bruno.app"
           "${pkgs.obsidian}/Applications/Obsidian.app"
         ];
