@@ -63,6 +63,7 @@
           "ghostty"
           "raycast"
           "dbeaver-community"
+          "arc"
         ];
         onActivation.cleanup = "zap";
         onActivation.autoUpdate = true;
@@ -98,7 +99,7 @@
       system.defaults = {
         dock.autohide = true;
         dock.persistent-apps = [
-          "/Applications/Zen Browser.app"
+          "/Applications/Arc.app"
           "/Applications/Ghostty.app"
           # "${pkgs.alacritty}/Applications/Alacritty.app"
           "/Spark Desktop.app"
