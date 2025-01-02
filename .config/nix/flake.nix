@@ -37,7 +37,6 @@
           "bruno-cli"
         ];
         casks = [
-          "Spark"
           "shottr"
           "alt-tab"
           "hiddenbar"
