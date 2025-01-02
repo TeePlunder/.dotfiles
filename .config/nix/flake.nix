@@ -46,6 +46,7 @@
           "cmake"
           "go"
           "gh"
+          "openssh"
         ];
         casks = [
           "shottr"
