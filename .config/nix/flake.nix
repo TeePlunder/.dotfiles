@@ -51,6 +51,7 @@
           "zellij"
           "go-task"
           "tldr"
+          "fisher"
         ];
         casks = [
           "shottr"
