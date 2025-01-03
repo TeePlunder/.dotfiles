@@ -52,6 +52,7 @@
           "go-task"
           "tldr"
           "fisher"
+          "td"
         ];
         casks = [
           "shottr"
@@ -66,7 +67,7 @@
           "raycast"
           "dbeaver-community"
           "arc"
-          "docker"
+          # "docker"
         ];
         masApps = {
             "Phiewer" = 1226444549;
