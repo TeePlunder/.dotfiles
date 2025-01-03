@@ -50,6 +50,7 @@
           "openssh"
           "zellij"
           "go-task"
+          "tldr"
         ];
         casks = [
           "shottr"
