@@ -54,6 +54,7 @@
           "fisher"
           "td"
           "nvm"
+          "yarn"
         ];
         casks = [
           "shottr"
