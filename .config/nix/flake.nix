@@ -67,7 +67,7 @@
           "raycast"
           "dbeaver-community"
           "arc"
-          # "docker"
+          "docker"
         ];
         onActivation.cleanup = "zap";
         onActivation.autoUpdate = true;
