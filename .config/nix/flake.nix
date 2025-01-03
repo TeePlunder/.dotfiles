@@ -52,6 +52,7 @@
           # "sketchybar"
           "docker"
           "docker-compose"
+          "go-task"
         ];
         casks = [
           "shottr"
