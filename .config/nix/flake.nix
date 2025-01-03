@@ -52,6 +52,7 @@
           "go-task"
           "tldr"
           "fisher"
+          "td"
         ];
         casks = [
           "shottr"
@@ -66,7 +67,7 @@
           "raycast"
           "dbeaver-community"
           "arc"
-          "docker"
+          # "docker"
         ];
         onActivation.cleanup = "zap";
         onActivation.autoUpdate = true;
