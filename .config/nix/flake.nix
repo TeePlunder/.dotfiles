@@ -36,7 +36,6 @@
         brews = [
           "mas" # to install apps from the app store through the cli
           "neovim"
-          "bruno-cli"
           "lazygit"
           "lazydocker"
           "bat"
