@@ -53,6 +53,7 @@
           "tldr"
           "fisher"
           "td"
+          "nvm"
         ];
         casks = [
           "shottr"
