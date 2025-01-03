@@ -49,9 +49,6 @@
           "gh"
           "openssh"
           "zellij"
-          # "sketchybar"
-          "docker"
-          "docker-compose"
           "go-task"
         ];
         casks = [
@@ -67,6 +64,7 @@
           "raycast"
           "dbeaver-community"
           "arc"
+          "docker"
         ];
         onActivation.cleanup = "zap";
         onActivation.autoUpdate = true;
