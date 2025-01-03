@@ -34,6 +34,7 @@
       homebrew = {
         enable = true;
         brews = [
+          "fish"
           "mas" # to install apps from the app store through the cli
           "neovim"
           "lazygit"
