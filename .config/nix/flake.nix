@@ -49,9 +49,7 @@
           "gh"
           "openssh"
           "zellij"
-          # "sketchybar"
-          "docker"
-          "docker-compose"
+          "go-task"
         ];
         casks = [
           "shottr"
@@ -66,6 +64,7 @@
           "raycast"
           "dbeaver-community"
           "arc"
+          "docker"
         ];
         masApps = {
             "Phiewer" = 1226444549;
