@@ -123,7 +123,6 @@
         NSGlobalDomain.AppleICUForce24HourTime = true;
         NSGlobalDomain.AppleInterfaceStyle = "Dark";
         NSGlobalDomain.KeyRepeat = 2;
-        spaces.spans-displays = true;
         trackpad.Clicking = true;
         trackpad.TrackpadThreeFingerDrag = true;
       };
