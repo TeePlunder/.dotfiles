@@ -53,7 +53,6 @@
           "tldr"
           "fisher"
           "td"
-          "nvm"
           "yarn"
           "bruno-cli"
         ];
