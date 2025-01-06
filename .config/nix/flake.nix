@@ -122,6 +122,7 @@
         NSGlobalDomain.AppleInterfaceStyle = "Dark";
         NSGlobalDomain.KeyRepeat = 2;
         spaces.spans-displays = true;
+        trackpad.Clicking = true;
       };
 
       # Auto upgrade nix package and the daemon service.
