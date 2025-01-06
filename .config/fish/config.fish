@@ -11,4 +11,6 @@ set -Ux fish_user_paths /opt/homebrew/bin $fish_user_paths
 
 set -Ux fish_user_paths $fish_user_paths $HOME/go/bin
 
+set -Ux fish_user_paths ~/.nvm/versions/node/$(nvm current)/bin $fish_user_paths
+
 #set -gx NVM_DIR (brew --prefix nvm)
