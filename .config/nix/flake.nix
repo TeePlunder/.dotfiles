@@ -68,6 +68,7 @@
           "dbeaver-community"
           "arc"
           "docker"
+          "spotify"
         ];
         masApps = {
             "Phiewer" = 1226444549;
