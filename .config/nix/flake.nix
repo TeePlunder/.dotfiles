@@ -71,6 +71,7 @@
           "dbeaver-community"
           "arc"
           "docker"
+          "spotify"
         ];
         onActivation.cleanup = "zap";
         onActivation.autoUpdate = true;
