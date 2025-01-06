@@ -19,7 +19,7 @@ HIST_STAMPS="dd.mm.yyyy"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
   git
-  zsh-autosuggestions
+  # zsh-autosuggestions
   web-search)
 
 # export MANPATH="/usr/local/man:$MANPATH"
@@ -59,10 +59,10 @@ alias c='clear'
 alias n='nvim'
 
 # alias for basic cmds
-alias ls='exa'
-alias la='exa -a'
-alias ll='exa -alh'
-alias tree='exa --tree'
+# alias ls='exa'
+# alias la='exa -a'
+# alias ll='exa -alh'
+# alias tree='exa --tree'
 alias ..="cd .."
 alias cat='bat'
 
@@ -83,8 +83,8 @@ bindkey "^[[1;5D" backward-word
 # # The next line enables shell command completion for gcloud.
 # if [ -f '/Users/leonbergmann/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/leonbergmann/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
 
-eval "$(starship init zsh)"
-export STARSHIP_CONFIG=$HOME/.config/starship/starship.toml
+# eval "$(starship init zsh)"
+# export STARSHIP_CONFIG=$HOME/.config/starship/starship.toml
 
 eval "$(zoxide init zsh)"
 
