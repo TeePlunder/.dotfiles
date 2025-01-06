@@ -72,6 +72,7 @@
           "arc"
           "docker"
           "spotify"
+          "godspeed"
         ];
         onActivation.cleanup = "zap";
         onActivation.autoUpdate = true;
