@@ -55,6 +55,7 @@
           "td"
           "nvm"
           "yarn"
+          "bruno-cli"
         ];
         casks = [
           "shottr"
