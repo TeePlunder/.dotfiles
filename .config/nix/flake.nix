@@ -123,6 +123,7 @@
         NSGlobalDomain.KeyRepeat = 2;
         spaces.spans-displays = true;
         trackpad.Clicking = true;
+        trackpad.TrackpadThreeFingerDrag = true;
       };
 
       # Auto upgrade nix package and the daemon service.
