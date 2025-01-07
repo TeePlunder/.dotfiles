@@ -72,6 +72,7 @@
         ];
         masApps = {
             "Phiewer" = 1226444549;
+            "Spark" = 1176895641;
         };
         onActivation.cleanup = "zap";
         onActivation.autoUpdate = true;
