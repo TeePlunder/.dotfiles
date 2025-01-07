@@ -74,9 +74,6 @@
           "spotify"
           "godspeed"
         ];
-        masApps = {
-            "Spark" = 1176895641;
-        };
         onActivation.cleanup = "zap";
         onActivation.autoUpdate = true;
         onActivation.upgrade = true;
