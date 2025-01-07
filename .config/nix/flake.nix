@@ -55,6 +55,7 @@
           "td"
           "yarn"
           "bruno-cli"
+          "node@20"
         ];
         casks = [
           "shottr"
