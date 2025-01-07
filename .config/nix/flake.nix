@@ -111,7 +111,7 @@
           "/Applications/Arc.app"
           "/Applications/Ghostty.app"
           # "${pkgs.alacritty}/Applications/Alacritty.app"
-          "/Applications/Spark.app"
+          "/Applications/Spark Desktop.app"
           "/Applications/Bruno.app"
           "${pkgs.obsidian}/Applications/Obsidian.app"
         ];
