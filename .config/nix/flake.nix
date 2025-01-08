@@ -73,6 +73,7 @@
           "docker"
           "spotify"
           "godspeed"
+          "sf-symbols"
         ];
         onActivation.cleanup = "zap";
         onActivation.autoUpdate = true;
