@@ -73,7 +73,6 @@
           "arc"
           "docker"
           "spotify"
-          "godspeed"
           "sf-symbols"
           "todoist"
         ];
