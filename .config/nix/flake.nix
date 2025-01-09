@@ -75,6 +75,7 @@
           "spotify"
           "godspeed"
           "sf-symbols"
+          "todoist"
         ];
         onActivation.cleanup = "zap";
         onActivation.autoUpdate = true;
