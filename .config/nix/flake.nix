@@ -56,6 +56,7 @@
           "yarn"
           "bruno-cli"
           "node@20"
+          "htop"
         ];
         casks = [
           "shottr"
