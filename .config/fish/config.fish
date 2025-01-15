@@ -23,3 +23,12 @@ function pkillgrep
     pgrep $argv | xargs -I _ kill -9 _
 end
 
+
+function fzf_history
+  history | fzf --height=40% --reverse --preview="echo {}" | read -l cmd
+      if test -n "$cmd"
+          eval $cmd
+      end
+end
+
+alias fh=fzf_history
