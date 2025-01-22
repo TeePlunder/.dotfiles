@@ -57,6 +57,7 @@
           "bruno-cli"
           "node@20"
           "htop"
+          "coreutils"
         ];
         casks = [
           "shottr"
