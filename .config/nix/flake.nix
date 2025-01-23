@@ -68,7 +68,6 @@
           "zen-browser"
           "bruno"
           "trex"
-          "ghostty"
           "raycast"
           "dbeaver-community"
           "arc"
@@ -112,8 +111,7 @@
         dock.autohide = true;
         dock.persistent-apps = [
           "/Applications/Arc.app"
-          "/Applications/Ghostty.app"
-          # "${pkgs.alacritty}/Applications/Alacritty.app"
+          "${pkgs.alacritty}/Applications/Alacritty.app"
           "/Applications/Spark.app"
           "/Applications/Bruno.app"
           "${pkgs.obsidian}/Applications/Obsidian.app"
