@@ -7,9 +7,14 @@ zoxide init fish | source
 # Generated for envman. Do not edit.
 test -s ~/.config/envman/load.fish; and source ~/.config/envman/load.fish
 
-set -Ux fish_user_paths /usr/local/bin /opt/homebrew/bin $HOME/go/bin $fish_user_paths
+# Add Node@20's bin directory to PATH
+set -gx PATH /opt/homebrew/opt/node@20/bin $PATH
 
-#set -gx NVM_DIR (brew --prefix nvm)
+# For compilers to find node@20 (if needed)
+set -gx LDFLAGS "-L/opt/homebrew/opt/node@20/lib"
+set -gx CPPFLAGS "-I/opt/homebrew/opt/node@20/include"
+
+set -Ux fish_user_paths /opt/homebrew/bin $HOME/go/bin $fish_user_paths
 
 function psgrep
     pgrep -d ',' $argv | xargs -I _ ps -fp _
