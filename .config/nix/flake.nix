@@ -53,9 +53,9 @@
           "tldr"
           "fisher"
           "td"
+          "node@20"
           "yarn"
           "bruno-cli"
-          "node@20"
           "htop"
           "coreutils"
         ];
