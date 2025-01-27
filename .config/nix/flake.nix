@@ -58,6 +58,7 @@
           "bruno-cli"
           "htop"
           "coreutils"
+          "pnpm"
         ];
         casks = [
           "shottr"
