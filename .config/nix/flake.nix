@@ -76,6 +76,7 @@
           "spotify"
           "sf-symbols"
           "todoist"
+          "aldente"
         ];
         onActivation.cleanup = "zap";
         onActivation.autoUpdate = true;
