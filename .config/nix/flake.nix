@@ -68,6 +68,7 @@
           "arc"
           "docker"
           "spotify"
+          "aldente"
         ];
         masApps = {
             "Phiewer" = 1226444549;
