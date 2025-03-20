@@ -75,7 +75,6 @@
           "docker"
           "spotify"
           "sf-symbols"
-          "todoist"
           "aldente"
         ];
         onActivation.cleanup = "zap";
