@@ -76,6 +76,7 @@
           "spotify"
           "sf-symbols"
           "aldente"
+          "zed"
         ];
         onActivation.cleanup = "zap";
         # onActivation.autoUpdate = true;
