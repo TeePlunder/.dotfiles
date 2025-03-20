@@ -110,6 +110,7 @@
 
       system.defaults = {
         dock.autohide = true;
+        dock.autohide-delay = null;
         dock.persistent-apps = [
           "/Applications/Arc.app"
           "${pkgs.alacritty}/Applications/Alacritty.app"
