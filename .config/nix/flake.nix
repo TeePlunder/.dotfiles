@@ -53,7 +53,7 @@
           "tldr"
           "fisher"
           "td"
-          "node@20"
+          "node@22"
           "yarn"
           "bruno-cli"
           "htop"
@@ -77,6 +77,7 @@
           "sf-symbols"
           "aldente"
           "zed"
+          "ghostty"
         ];
         onActivation.cleanup = "zap";
         # onActivation.autoUpdate = true;
@@ -114,7 +115,7 @@
         dock.autohide-delay = null;
         dock.persistent-apps = [
           "/Applications/Arc.app"
-          "${pkgs.alacritty}/Applications/Alacritty.app"
+          "/Applications/Ghostty.app"
           "/Applications/Bruno.app"
           "${pkgs.obsidian}/Applications/Obsidian.app"
         ];
