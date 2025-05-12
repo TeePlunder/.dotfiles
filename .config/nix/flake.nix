@@ -84,7 +84,7 @@
       };
 
       fonts.packages = [
-        (pkgs.nerdfonts.override { fonts = [ "JetBrainsMono" ]; })
+        pkgs.nerd-fonts."jetbrains-mono"
       ];
 
       # Fixing Mac Spotlight to get the nix applications like alacritty 
@@ -130,8 +130,8 @@
         trackpad.TrackpadThreeFingerDrag = true;
       };
 
-      # Auto upgrade nix package and the daemon service.
-      services.nix-daemon.enable = true;
+      # Make sure nix-darwin manages Nix itself:
+      nix.enable = true;  # manage the Nix installation + daemon
       # nix.package = pkgs.nix;
 
       services.sketchybar = {
