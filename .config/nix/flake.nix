@@ -59,6 +59,7 @@
           "htop"
           "coreutils"
           "pnpm"
+          "mysql"
         ];
         casks = [
           "shottr"
