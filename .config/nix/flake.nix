@@ -53,13 +53,14 @@
           "tldr"
           "fisher"
           "td"
-          "node@22"
+          # "node@22"
           "yarn"
           "bruno-cli"
           "htop"
           "coreutils"
           "pnpm"
           "mysql"
+          "fnm"
         ];
         casks = [
           "shottr"
