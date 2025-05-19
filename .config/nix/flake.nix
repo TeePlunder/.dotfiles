@@ -78,6 +78,7 @@
           "aldente"
           "zed"
           "ghostty"
+          "appcleaner"
         ];
         onActivation.cleanup = "zap";
         # onActivation.autoUpdate = true;
