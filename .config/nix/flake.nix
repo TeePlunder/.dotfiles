@@ -61,6 +61,7 @@
           "pnpm"
           "mysql"
           "fnm"
+          "azcopy"
         ];
         casks = [
           "shottr"
