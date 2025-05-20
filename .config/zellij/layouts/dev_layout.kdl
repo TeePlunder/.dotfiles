@@ -1,0 +1,21 @@
+layout {
+  tab name="sc-platform" {
+    pane {
+      command "nvim"
+      cwd "/Users/leonbergmann/development/sc-platform"
+    }
+    pane split_direction="vertical" {
+      pane {
+        command "find libs -type f -name "*.ts" ! -path 'libs/**/dist/**' | entr -ncr pnpm build:libs"
+        cwd "/Users/leonbergmann/development/sc-platform"
+      } 
+      pane {
+        command "pnpm start:dev"
+        cwd "/Users/leonbergmann/development/sc-platform/apps/storage-app"
+      }
+    }
+  }
+//  tab name="logs" {
+//    pane command "tail -f /var/log/syslog"
+//  }
+}
