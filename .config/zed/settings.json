@@ -20,5 +20,6 @@
     "dock": "right"
   },
   "relative_line_numbers": true,
-  "format_on_save": "prettier"
+  "format_on_save": "prettier",
+  "vertical_scroll_margin": 999
 }
