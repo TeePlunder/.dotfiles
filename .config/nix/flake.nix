@@ -59,7 +59,7 @@
           "htop"
           "coreutils"
           "pnpm"
-          "mysql"
+          "mysql@8.0"
           "fnm"
           "azcopy"
           "entr"
