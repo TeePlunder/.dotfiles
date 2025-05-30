@@ -55,7 +55,6 @@
           "td"
           # "node@22"
           "yarn"
-          "bruno-cli"
           "htop"
           "coreutils"
           "pnpm"
