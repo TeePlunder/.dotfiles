@@ -70,7 +70,7 @@
           "hiddenbar"
           "amethyst"
           "unnaturalscrollwheels"
-          "zen-browser"
+          "zen"
           "bruno"
           "trex"
           "raycast"
