@@ -82,6 +82,7 @@
           "zed"
           "ghostty"
           "appcleaner"
+          "chatgpt"
         ];
         onActivation.cleanup = "zap";
         # onActivation.autoUpdate = true;
