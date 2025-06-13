@@ -62,6 +62,7 @@
           "fnm"
           "azcopy"
           "entr"
+          "derailed/k9s/k9s"
         ];
         casks = [
           "shottr"
