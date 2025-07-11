@@ -37,8 +37,6 @@
           "fish"
           "mas" # to install apps from the app store through the cli
           "neovim"
-          "lazygit"
-          "lazydocker"
           "bat"
           "zoxide"
           "ripgrep"
@@ -63,6 +61,8 @@
           "azcopy"
           "entr"
           "derailed/k9s/k9s"
+          "azure-cli"
+          "kubectl"
         ];
         casks = [
           "shottr"
