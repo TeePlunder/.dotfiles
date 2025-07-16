@@ -73,7 +73,7 @@
           "raycast"
           "dbeaver-community"
           "arc"
-          "docker"
+          "docker-desktop"
           "spotify"
           "sf-symbols"
           "aldente"
