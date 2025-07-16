@@ -19,15 +19,6 @@
         [ 
             pkgs.alacritty
             pkgs.mkalias
-            pkgs.neovim
-            pkgs.zellij
-            pkgs.lazygit
-            pkgs.lazydocker
-            pkgs.fzf
-            pkgs.bat
-            pkgs.raycast
-            pkgs.obsidian
-            pkgs.vscode
             pkgs.sketchybar
         ];
 
@@ -56,13 +47,19 @@
           "htop"
           "coreutils"
           "pnpm"
-          "mysql@8.0"
+          # "mysql@8.0"
           "fnm"
           "azcopy"
           "entr"
           "derailed/k9s/k9s"
           "azure-cli"
           "kubectl"
+          "lazygit"
+          "lazydocker"
+          "neovim"
+          "zellij"
+          "fzf"
+          "bat"
         ];
         casks = [
           "shottr"
@@ -84,6 +81,9 @@
           "ghostty"
           "appcleaner"
           "chatgpt"
+          "visual-studio-code"
+          "obsidian"
+          "raycast"
         ];
         onActivation.cleanup = "zap";
         # onActivation.autoUpdate = true;
