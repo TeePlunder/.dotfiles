@@ -60,7 +60,7 @@
           "hiddenbar"
           "amethyst"
           "unnaturalscrollwheels"
-          "zen-browser"
+          "zen"
           "bruno"
           "trex"
           "raycast"
@@ -69,18 +69,16 @@
           "docker"
           "spotify"
           "aldente"
+          "sf-symbols"
+          "appcleaner"
         ];
-        masApps = {
-            "Phiewer" = 1226444549;
-            "Spark" = 1176895641;
-        };
         onActivation.cleanup = "zap";
         onActivation.autoUpdate = true;
         onActivation.upgrade = true;
       };
 
       fonts.packages = [
-        (pkgs.nerdfonts.override { fonts = [ "JetBrainsMono" ]; })
+        pkgs.nerd-fonts."jetbrains-mono"
       ];
 
       # Fixing Mac Spotlight to get the nix applications like alacritty 
@@ -107,10 +105,10 @@
 
       system.defaults = {
         dock.autohide = true;
+        dock.autohide-delay = null;
         dock.persistent-apps = [
           "/Applications/Arc.app"
-          "${pkgs.alacritty}/Applications/Alacritty.app"
-          "/Applications/Spark.app"
+          "/Applications/Ghostty.app"
           "/Applications/Bruno.app"
           "${pkgs.obsidian}/Applications/Obsidian.app"
         ];
@@ -122,13 +120,12 @@
         NSGlobalDomain.AppleICUForce24HourTime = true;
         NSGlobalDomain.AppleInterfaceStyle = "Dark";
         NSGlobalDomain.KeyRepeat = 2;
-        spaces.spans-displays = true;
         trackpad.Clicking = true;
         trackpad.TrackpadThreeFingerDrag = true;
       };
 
-      # Auto upgrade nix package and the daemon service.
-      services.nix-daemon.enable = true;
+      # Make sure nix-darwin manages Nix itself:
+      services.nix-daemon.enable = true;  # manage the Nix installation + daemon
       # nix.package = pkgs.nix;
 
       services.sketchybar = {
