@@ -72,7 +72,6 @@
           "trex"
           "raycast"
           "dbeaver-community"
-          "arc"
           "docker-desktop"
           "spotify"
           "sf-symbols"
@@ -84,6 +83,7 @@
           "visual-studio-code"
           "obsidian"
           "raycast"
+          "thebrowsercompany-dia"
         ];
         onActivation.cleanup = "zap";
         # onActivation.autoUpdate = true;
@@ -120,7 +120,7 @@
         dock.autohide = true;
         dock.autohide-delay = null;
         dock.persistent-apps = [
-          "/Applications/Arc.app"
+          "/Applications/Dia.app"
           "/Applications/Ghostty.app"
           "/Applications/Bruno.app"
           "${pkgs.obsidian}/Applications/Obsidian.app"
