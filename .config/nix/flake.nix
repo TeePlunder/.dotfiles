@@ -85,6 +85,9 @@
           "obsidian"
           "raycast"
           "thebrowsercompany-dia"
+          "notion"
+          "notion-mail"
+          "notion-calendar"
         ];
         onActivation.cleanup = "zap";
         # onActivation.autoUpdate = true;
@@ -124,7 +127,9 @@
           "/Applications/Dia.app"
           "/Applications/Ghostty.app"
           "/Applications/Bruno.app"
-          "${pkgs.obsidian}/Applications/Obsidian.app"
+          "/Applications/Notion Calendar.app"
+          "/Applications/Notion Mail.app"
+          "/Applications/Notion.app"
         ];
         finder.FXPreferredViewStyle = "clmv";
         finder.AppleShowAllExtensions = true;
