@@ -85,7 +85,6 @@
           "obsidian"
           "raycast"
           "thebrowsercompany-dia"
-          "kindavim"
         ];
         onActivation.cleanup = "zap";
         # onActivation.autoUpdate = true;
