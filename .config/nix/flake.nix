@@ -60,6 +60,7 @@
           "zellij"
           "fzf"
           "bat"
+          "fd"
         ];
         casks = [
           "shottr"
