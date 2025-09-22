@@ -61,6 +61,7 @@
           "fzf"
           "bat"
           "fd"
+          "codex"
         ];
         casks = [
           "shottr"
