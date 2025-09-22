@@ -37,3 +37,6 @@ function fzf_history
 end
 
 alias fh=fzf_history
+
+fish_add_path /opt/homebrew/opt/mysql@8.0/bin
+fish_add_path /opt/homebrew/opt/mysql@8.0/sbin
