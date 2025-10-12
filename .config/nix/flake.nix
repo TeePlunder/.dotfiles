@@ -19,15 +19,6 @@
         [ 
             pkgs.alacritty
             pkgs.mkalias
-            pkgs.neovim
-            pkgs.zellij
-            pkgs.lazygit
-            pkgs.lazydocker
-            pkgs.fzf
-            pkgs.bat
-            pkgs.raycast
-            pkgs.obsidian
-            pkgs.vscode
             pkgs.sketchybar
         ];
 
@@ -43,30 +34,20 @@
           "zoxide"
           "ripgrep"
           "curl"
-          "fzf"
           "cmake"
           "go"
           "gh"
           "openssh"
-          "zellij"
           "go-task"
           "tldr"
           "fisher"
           "td"
-          # "node@22"
           "yarn"
           "htop"
           "coreutils"
           "pnpm"
-          # "mysql@8.0"
           "fnm"
-          "azcopy"
           "entr"
-          "derailed/k9s/k9s"
-          "azure-cli"
-          "kubectl"
-          "lazygit"
-          "lazydocker"
           "neovim"
           "zellij"
           "fzf"
@@ -85,27 +66,16 @@
           "trex"
           "raycast"
           "dbeaver-community"
-          "arc"
           "docker"
           "spotify"
           "aldente"
           "sf-symbols"
           "appcleaner"
           "docker-desktop"
-          "spotify"
-          "sf-symbols"
-          "aldente"
-          "zed"
-          "ghostty"
-          "appcleaner"
           "chatgpt"
           "visual-studio-code"
           "obsidian"
-          "raycast"
           "thebrowsercompany-dia"
-          "notion"
-          "notion-mail"
-          "notion-calendar"
         ];
         onActivation.cleanup = "zap";
         # onActivation.autoUpdate = true;
@@ -142,13 +112,9 @@
         dock.autohide = true;
         dock.autohide-delay = null;
         dock.persistent-apps = [
-          "/Applications/Arc.app"
           "/Applications/Dia.app"
-          "/Applications/Ghostty.app"
+          "/Applications/Alacritty.app"
           "/Applications/Bruno.app"
-          "/Applications/Notion Calendar.app"
-          "/Applications/Notion Mail.app"
-          "/Applications/Notion.app"
         ];
         finder.FXPreferredViewStyle = "clmv";
         finder.AppleShowAllExtensions = true;
@@ -191,7 +157,7 @@
   {
     # Build darwin flake using:
     # $ darwin-rebuild build --flake .#simple
-    darwinConfigurations."work" = nix-darwin.lib.darwinSystem {
+    darwinConfigurations."private" = nix-darwin.lib.darwinSystem {
       modules = [ 
           configuration
           nix-homebrew.darwinModules.nix-homebrew
@@ -214,6 +180,6 @@
     };
 
     # Expose the package set, including overlays, for convenience.
-    darwinPackages = self.darwinConfigurations."work".pkgs;
+    darwinPackages = self.darwinConfigurations."private".pkgs;
   };
 }
