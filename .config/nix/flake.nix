@@ -53,6 +53,26 @@
           "tldr"
           "fisher"
           "td"
+          # "node@22"
+          "yarn"
+          "htop"
+          "coreutils"
+          "pnpm"
+          # "mysql@8.0"
+          "fnm"
+          "azcopy"
+          "entr"
+          "derailed/k9s/k9s"
+          "azure-cli"
+          "kubectl"
+          "lazygit"
+          "lazydocker"
+          "neovim"
+          "zellij"
+          "fzf"
+          "bat"
+          "fd"
+          "codex"
         ];
         casks = [
           "shottr"
@@ -71,10 +91,25 @@
           "aldente"
           "sf-symbols"
           "appcleaner"
+          "docker-desktop"
+          "spotify"
+          "sf-symbols"
+          "aldente"
+          "zed"
+          "ghostty"
+          "appcleaner"
+          "chatgpt"
+          "visual-studio-code"
+          "obsidian"
+          "raycast"
+          "thebrowsercompany-dia"
+          "notion"
+          "notion-mail"
+          "notion-calendar"
         ];
         onActivation.cleanup = "zap";
-        onActivation.autoUpdate = true;
-        onActivation.upgrade = true;
+        # onActivation.autoUpdate = true;
+        # onActivation.upgrade = true;
       };
 
       fonts.packages = [
@@ -108,9 +143,12 @@
         dock.autohide-delay = null;
         dock.persistent-apps = [
           "/Applications/Arc.app"
+          "/Applications/Dia.app"
           "/Applications/Ghostty.app"
           "/Applications/Bruno.app"
-          "${pkgs.obsidian}/Applications/Obsidian.app"
+          "/Applications/Notion Calendar.app"
+          "/Applications/Notion Mail.app"
+          "/Applications/Notion.app"
         ];
         finder.FXPreferredViewStyle = "clmv";
         finder.AppleShowAllExtensions = true;
@@ -125,7 +163,7 @@
       };
 
       # Make sure nix-darwin manages Nix itself:
-      services.nix-daemon.enable = true;  # manage the Nix installation + daemon
+      nix.enable = true;  # manage the Nix installation + daemon
       # nix.package = pkgs.nix;
 
       services.sketchybar = {
@@ -153,7 +191,7 @@
   {
     # Build darwin flake using:
     # $ darwin-rebuild build --flake .#simple
-    darwinConfigurations."private" = nix-darwin.lib.darwinSystem {
+    darwinConfigurations."work" = nix-darwin.lib.darwinSystem {
       modules = [ 
           configuration
           nix-homebrew.darwinModules.nix-homebrew
@@ -176,6 +214,6 @@
     };
 
     # Expose the package set, including overlays, for convenience.
-    darwinPackages = self.darwinConfigurations."private".pkgs;
+    darwinPackages = self.darwinConfigurations."work".pkgs;
   };
 }

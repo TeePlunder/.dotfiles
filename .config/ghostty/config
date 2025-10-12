@@ -1,2 +1,4 @@
-theme = GruvboxDark
-
+theme = dark:Gruvbox Dark,light:Gruvbox Light
+window-decoration = false
+macos-titlebar-style = hidden
+keybind = shift+enter=text:\n

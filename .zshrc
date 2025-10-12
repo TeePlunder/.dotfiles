@@ -19,7 +19,7 @@ HIST_STAMPS="dd.mm.yyyy"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
   git
-  zsh-autosuggestions
+  # zsh-autosuggestions
   web-search)
 
 # export MANPATH="/usr/local/man:$MANPATH"
@@ -59,17 +59,17 @@ alias c='clear'
 alias n='nvim'
 
 # alias for basic cmds
-alias ls='exa'
-alias la='exa -a'
-alias ll='exa -alh'
-alias tree='exa --tree'
+# alias ls='exa'
+# alias la='exa -a'
+# alias ll='exa -alh'
+# alias tree='exa --tree'
 alias ..="cd .."
 alias cat='bat'
 
 alias whatip="ifconfig | grep "inet " | grep -Fv 127.0.0.1 | awk '{print $2}'"
 
-source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
-source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+# source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+# source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 autoload -U +X bashcompinit && bashcompinit
 complete -o nospace -C /opt/homebrew/bin/terraform terraform
 
@@ -83,8 +83,8 @@ bindkey "^[[1;5D" backward-word
 # # The next line enables shell command completion for gcloud.
 # if [ -f '/Users/leonbergmann/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/leonbergmann/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
 
-eval "$(starship init zsh)"
-export STARSHIP_CONFIG=$HOME/.config/starship/starship.toml
+# eval "$(starship init zsh)"
+# export STARSHIP_CONFIG=$HOME/.config/starship/starship.toml
 
 eval "$(zoxide init zsh)"
 
@@ -98,3 +98,8 @@ export PATH=$PATH:$HOME/go/bin
 
 # Generated for envman. Do not edit.
 [ -s "$HOME/.config/envman/load.sh" ] && source "$HOME/.config/envman/load.sh"
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+export PATH="/opt/homebrew/opt/node@20/bin:$PATH"
