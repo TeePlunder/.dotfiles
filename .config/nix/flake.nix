@@ -85,10 +85,10 @@
           "visual-studio-code"
           "obsidian"
           "raycast"
-          "thebrowsercompany-dia"
           "notion"
           "notion-mail"
           "notion-calendar"
+          "helium-browser"
         ];
         onActivation.cleanup = "zap";
         # onActivation.autoUpdate = true;
@@ -125,7 +125,7 @@
         dock.autohide = true;
         dock.autohide-delay = null;
         dock.persistent-apps = [
-          "/Applications/Dia.app"
+          "/Applications/Helium.app"
           "/Applications/Ghostty.app"
           "/Applications/Bruno.app"
           "/Applications/Notion Calendar.app"
