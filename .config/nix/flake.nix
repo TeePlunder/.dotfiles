@@ -88,6 +88,7 @@
           "notion-calendar"
           "helium-browser"
           "claude-code"
+          "opencode",
         ];
         onActivation.cleanup = "zap";
         # onActivation.autoUpdate = true;
