@@ -85,8 +85,6 @@
           "visual-studio-code"
           "obsidian"
           "raycast"
-          "notion"
-          "notion-mail"
           "notion-calendar"
           "helium-browser"
         ];
@@ -129,8 +127,6 @@
           "/Applications/Ghostty.app"
           "/Applications/Bruno.app"
           "/Applications/Notion Calendar.app"
-          "/Applications/Notion Mail.app"
-          "/Applications/Notion.app"
         ];
         finder.FXPreferredViewStyle = "clmv";
         finder.AppleShowAllExtensions = true;
