@@ -40,3 +40,5 @@ alias fh=fzf_history
 
 fish_add_path /opt/homebrew/opt/mysql@8.0/bin
 fish_add_path /opt/homebrew/opt/mysql@8.0/sbin
+
+fish_add_path (npm config get prefix)/bin
