@@ -3,7 +3,7 @@
 ## To install everything
 
 ```fish
-nix run nix-darwin --extra-experimental-features "nix-command flakes" -- switch --flake ~/.dotfiles/.config/nix#work
+sudo nix run nix-darwin -- switch --flake .#work
 ```
 
 ## update flake
