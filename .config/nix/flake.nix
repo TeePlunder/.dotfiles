@@ -87,6 +87,7 @@
           "raycast"
           "notion-calendar"
           "helium-browser"
+          "claude-code"
         ];
         onActivation.cleanup = "zap";
         # onActivation.autoUpdate = true;
