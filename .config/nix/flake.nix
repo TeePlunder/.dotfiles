@@ -128,7 +128,9 @@
           "/Applications/Helium.app"
           "/Applications/Ghostty.app"
           "/Applications/Bruno.app"
+          "/Applications/DBeaver.app"
           "/Applications/Notion Calendar.app"
+          "/Applications/Obsidian.app"
         ];
         finder.FXPreferredViewStyle = "clmv";
         finder.AppleShowAllExtensions = true;
