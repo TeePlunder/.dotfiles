@@ -76,6 +76,7 @@
           "visual-studio-code"
           "obsidian"
           "thebrowsercompany-dia"
+          "omnidisksweeper"
         ];
         onActivation.cleanup = "zap";
         # onActivation.autoUpdate = true;
