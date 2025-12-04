@@ -5,7 +5,7 @@
     nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
     nix-darwin.url = "github:LnL7/nix-darwin";
     nix-darwin.inputs.nixpkgs.follows = "nixpkgs";
-    nix-homebrew.url = "github:zhaofengli-wip/nix-homebrew";
+    nix-homebrew.url = "github:zhaofengli/nix-homebrew";
   };
 
   outputs = inputs@{ self, nix-darwin, nixpkgs, nix-homebrew, ... }:
@@ -54,6 +54,8 @@
           "bat"
           "fd"
           "codex"
+          "opencode"
+          "oven-sh/bun/bun"
         ];
         casks = [
           "shottr"
@@ -77,6 +79,8 @@
           "obsidian"
           "thebrowsercompany-dia"
           "omnidisksweeper"
+          "raycast"
+          "notion-calendar"
         ];
         onActivation.cleanup = "zap";
         # onActivation.autoUpdate = true;
@@ -128,6 +132,9 @@
         trackpad.Clicking = true;
         trackpad.TrackpadThreeFingerDrag = true;
       };
+
+      # Set primary user for homebrew and system defaults
+      system.primaryUser = "leonbergmann";
 
       # Make sure nix-darwin manages Nix itself:
       nix.enable = true;  # manage the Nix installation + daemon
