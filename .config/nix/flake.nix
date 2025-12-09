@@ -64,6 +64,7 @@
           "codex"
           "opencode"
           "oven-sh/bun/bun"
+          "jq"
         ];
         casks = [
           "shottr"
