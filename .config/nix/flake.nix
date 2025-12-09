@@ -91,6 +91,7 @@
           "notion-calendar"
           "helium-browser"
           "claude-code"
+          "lens"
         ];
         onActivation.cleanup = "zap";
         # onActivation.autoUpdate = true;
