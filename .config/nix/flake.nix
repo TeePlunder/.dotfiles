@@ -81,6 +81,7 @@
           "omnidisksweeper"
           "raycast"
           "notion-calendar"
+          "claude-code"
         ];
         onActivation.cleanup = "zap";
         # onActivation.autoUpdate = true;
