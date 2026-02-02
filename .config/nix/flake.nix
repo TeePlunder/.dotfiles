@@ -67,6 +67,7 @@
           "opencode"
           "oven-sh/bun/bun"
           "jq"
+          "lazysql"
         ];
         casks = [
           "shottr"
