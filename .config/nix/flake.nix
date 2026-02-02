@@ -6,10 +6,9 @@
     nix-darwin.url = "github:LnL7/nix-darwin";
     nix-darwin.inputs.nixpkgs.follows = "nixpkgs";
     nix-homebrew.url = "github:zhaofengli/nix-homebrew";
-    sqlit.url = "github:Maxteabag/sqlit";
   };
 
-  outputs = inputs@{ self, nix-darwin, nixpkgs, nix-homebrew, sqlit, ... }:
+  outputs = inputs@{ self, nix-darwin, nixpkgs, nix-homebrew, ... }:
   let
     configuration = { pkgs, config, ... }: {
       nixpkgs.config.allowUnfree = true; # allow to install unfree apps 
@@ -21,7 +20,6 @@
             pkgs.alacritty
             pkgs.mkalias
             pkgs.sketchybar
-            sqlit.packages.aarch64-darwin.default
         ];
 
       homebrew = {
