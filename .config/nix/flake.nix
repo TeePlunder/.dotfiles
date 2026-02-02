@@ -68,6 +68,7 @@
           "oven-sh/bun/bun"
           "jq"
           "lazysql"
+          "pipx"
         ];
         casks = [
           "shottr"
