@@ -43,3 +43,4 @@ fish_add_path /opt/homebrew/opt/mysql@8.0/sbin
 
 fish_add_path (npm config get prefix)/bin
 fish_add_path ~/.local/bin
+alias db="sqlit"
