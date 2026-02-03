@@ -1,4 +1,4 @@
-theme = dark:Gruvbox Dark,light:Gruvbox Light
+theme = Catppuccin Macchiato
 window-decoration = false
 macos-titlebar-style = hidden
 keybind = shift+enter=text:\n
