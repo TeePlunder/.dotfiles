@@ -1,3 +1,23 @@
+[font]
+size = 14
+
+[font.normal]
+family = "JetBrainsMono NF"
+style = "Regular"
+
+[scrolling]
+history = 10000
+multiplier = 3
+
+[window]
+decorations_theme_variant = "None"
+dynamic_title = true
+opacity = 0.95
+
+
+
+
+
 [colors]
 draw_bold_text_with_bright_colors = true
 
@@ -24,19 +44,3 @@ yellow = "0xeed49f"
 [colors.primary]
 background = "0x24273a"
 foreground = "0xcad3f5"
-
-[font]
-size = 14
-
-[font.normal]
-family = "JetBrainsMono NF"
-style = "Regular"
-
-[scrolling]
-history = 10000
-multiplier = 3
-
-[window]
-decorations_theme_variant = "None"
-dynamic_title = true
-opacity = 0.95
