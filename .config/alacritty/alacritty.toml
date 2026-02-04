@@ -1,29 +1,7 @@
+import = ["~/.config/alacritty/themes/catppuccin-latte.toml"]
+
 [colors]
 draw_bold_text_with_bright_colors = true
-
-[colors.bright]
-black = "0x5b6078"
-blue = "0x8aadf4"
-cyan = "0x8bd5ca"
-green = "0xa6da95"
-magenta = "0xc6a0f6"
-red = "0xed8796"
-white = "0xcad3f5"
-yellow = "0xeed49f"
-
-[colors.normal]
-black = "0x494d64"
-blue = "0x8aadf4"
-cyan = "0x8bd5ca"
-green = "0xa6da95"
-magenta = "0xc6a0f6"
-red = "0xed8796"
-white = "0xb8c0e0"
-yellow = "0xeed49f"
-
-[colors.primary]
-background = "0x24273a"
-foreground = "0xcad3f5"
 
 [font]
 size = 14

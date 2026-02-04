@@ -1,4 +1,4 @@
-theme = Catppuccin Mocha
+theme = light:Catppuccin Latte,dark:Catppuccin Mocha
 window-decoration = false
 macos-titlebar-style = hidden
 keybind = shift+enter=text:\n

@@ -24,6 +24,9 @@
 
       homebrew = {
         enable = true;
+        taps = [
+          "cormacrelf/tap"
+        ];
         brews = [
           "fish"
           "mas" # to install apps from the app store through the cli
@@ -67,6 +70,8 @@
           "jq"
           "lazysql"
           "pipx"
+          "dark-notify"
+          "stow"
         ];
         casks = [
           "shottr"
@@ -143,7 +148,7 @@
         finder.ShowStatusBar = true;
         loginwindow.GuestEnabled = false;
         NSGlobalDomain.AppleICUForce24HourTime = true;
-        NSGlobalDomain.AppleInterfaceStyle = "Dark";
+        NSGlobalDomain.AppleInterfaceStyleSwitchesAutomatically = true;
         NSGlobalDomain.KeyRepeat = 2;
         trackpad.Clicking = true;
         trackpad.TrackpadThreeFingerDrag = true;
