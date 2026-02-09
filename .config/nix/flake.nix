@@ -78,6 +78,7 @@
           "poppler"
           "resvg"
           "imagemagick"
+          "jiratui"
         ];
         casks = [
           "shottr"
