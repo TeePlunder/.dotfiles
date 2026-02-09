@@ -72,6 +72,12 @@
           "pipx"
           "dark-notify"
           "stow"
+          "yazi"
+          "ffmpeg"
+          "sevenzip"
+          "poppler"
+          "resvg"
+          "imagemagick"
         ];
         casks = [
           "shottr"
@@ -99,6 +105,7 @@
           "helium-browser"
           "claude-code"
           "lens"
+          "font-symbols-only-nerd-font"
         ];
         onActivation.cleanup = "zap";
         # onActivation.autoUpdate = true;
