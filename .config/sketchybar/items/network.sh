@@ -3,7 +3,7 @@
 network=(
     script="$PLUGIN_DIR/network.sh"
     background.padding_right=10
-    update_freq=5
+    update_freq=10
     label.drawing=off
 )
 
