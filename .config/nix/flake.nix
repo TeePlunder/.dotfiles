@@ -15,12 +15,34 @@
 
       # List packages installed in system profile. To search by name, run:
       # $ nix-env -qaP | grep wget
-      environment.systemPackages =
-        [
-            pkgs.alacritty
-            pkgs.mkalias
-            pkgs.sketchybar
-        ];
+      environment.systemPackages = with pkgs; [
+        alacritty
+        mkalias
+        sketchybar
+        bat
+        ripgrep
+        fd
+        fzf
+        zoxide
+        jq
+        htop
+        curl
+        coreutils
+        yazi
+        lazygit
+        lazydocker
+        ffmpeg
+        imagemagick
+        go
+        cmake
+        kubectl
+        gh
+        tldr
+        stow
+        entr
+        k9s
+        pipx
+      ];
 
       homebrew = {
         enable = true;
@@ -29,49 +51,26 @@
         ];
         brews = [
           "fish"
+          "fisher"
           "mas"
           "neovim"
-          "bat"
-          "zoxide"
-          "ripgrep"
-          "curl"
-          "fzf"
-          "cmake"
-          "go"
-          "gh"
-          "openssh"
           "zellij"
-          "go-task"
-          "tldr"
-          "fisher"
-          "td"
-          "yarn"
-          "htop"
-          "coreutils"
-          "pnpm"
+          "openssh"
           "fnm"
-          "azcopy"
-          "entr"
-          "derailed/k9s/k9s"
+          "pnpm"
+          "yarn"
+          "oven-sh/bun/bun"
+          "dark-notify"
           "azure-cli"
-          "kubectl"
-          "lazygit"
-          "lazydocker"
-          "fd"
+          "azcopy"
           "codex"
           "opencode"
-          "oven-sh/bun/bun"
-          "jq"
+          "go-task"
+          "td"
           "lazysql"
-          "pipx"
-          "dark-notify"
-          "stow"
-          "yazi"
-          "ffmpeg"
           "sevenzip"
           "poppler"
           "resvg"
-          "imagemagick"
         ];
         casks = [
           "shottr"
