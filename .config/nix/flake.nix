@@ -156,17 +156,19 @@
       # Set primary user for homebrew and system defaults
       system.primaryUser = "leonbergmann";
 
-      # Make sure nix-darwin manages Nix itself:
-      nix.enable = true;  # manage the Nix installation + daemon
-      # nix.package = pkgs.nix;
+      nix.enable = true;
+      nix.gc = {
+        automatic = true;
+        interval = { Weekday = 7; Hour = 3; Minute = 0; };
+        options = "--delete-older-than 30d";
+      };
+      nix.optimise.automatic = true;
+      nix.settings.experimental-features = "nix-command flakes";
 
       services.sketchybar = {
         enable = true;
         package = pkgs.sketchybar;
       };
-
-      # Necessary for using flakes on this system.
-      nix.settings.experimental-features = "nix-command flakes";
 
       # Enable alternative shell support in nix-darwin.
       programs.fish.enable = true;
