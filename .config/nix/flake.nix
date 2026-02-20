@@ -8,246 +8,49 @@
     nix-homebrew.url = "github:zhaofengli/nix-homebrew";
   };
 
-  outputs = inputs@{ self, nix-darwin, nixpkgs, nix-homebrew, ... }:
-  let
-    configuration = { pkgs, config, ... }: {
-      nixpkgs.config.allowUnfree = true; # allow to install unfree apps 
-
-      # List packages installed in system profile. To search by name, run:
-      # $ nix-env -qaP | grep wget
-      environment.systemPackages = with pkgs; [
-        alacritty
-        mkalias
-        sketchybar
-        bat
-        ripgrep
-        fd
-        fzf
-        zoxide
-        jq
-        htop
-        curl
-        coreutils
-        yazi
-        lazygit
-        lazydocker
-        ffmpeg
-        imagemagick
-        go
-        cmake
-        kubectl
-        gh
-        tldr
-        stow
-        entr
-        k9s
-        pipx
-      ];
-
-      homebrew = {
-        enable = true;
-        taps = [
-          "cormacrelf/tap"
-        ];
-        brews = [
-          "fish"
-          "fisher"
-          "mas"
-          "neovim"
-          "zellij"
-          "openssh"
-          "fnm"
-          "pnpm"
-          "yarn"
-          "oven-sh/bun/bun"
-          "dark-notify"
-          "azure-cli"
-          "azcopy"
-          "codex"
-          "opencode"
-          "go-task"
-          "td"
-          "lazysql"
-          "sevenzip"
-          "poppler"
-          "resvg"
-        ];
-        casks = [
-          "shottr"
-          "alt-tab"
-          "hiddenbar"
-          "amethyst"
-          "unnaturalscrollwheels"
-          "zen"
-          "bruno"
-          "trex"
-          "raycast"
-          "dbeaver-community"
-          "docker-desktop"
-          "spotify"
-          "sf-symbols"
-          "aldente"
-          "zed"
-          "ghostty"
-          "appcleaner"
-          "chatgpt"
-          "visual-studio-code"
-          "obsidian"
-          "notion-calendar"
-          "helium-browser"
-          "claude-code"
-          "lens"
-          "font-symbols-only-nerd-font"
-        ];
-        masApps = {
-          # "App Name" = Apple ID;
-        };
-        onActivation.cleanup = "zap";
-        # onActivation.autoUpdate = true;
-        # onActivation.upgrade = true;
-      };
-
-      fonts.packages = [
-        pkgs.nerd-fonts."jetbrains-mono"
-      ];
-
-      # Fixing Mac Spotlight to get the nix applications like alacritty 
-      system.activationScripts.applications.text = let
-        env = pkgs.buildEnv {
-          name = "system-applications";
-          paths = config.environment.systemPackages;
-          pathsToLink = "/Applications";
-        };
-      in
-        pkgs.lib.mkForce ''
-        # Set up applications.
-        echo "setting up /Applications..." >&2
-        rm -rf /Applications/Nix\ Apps
-        mkdir -p /Applications/Nix\ Apps
-        find ${env}/Applications -maxdepth 1 -type l -exec readlink '{}' + |
-        while read -r src; do
-          app_name=$(basename "$src")
-          echo "copying $src" >&2
-          ${pkgs.mkalias}/bin/mkalias "$src" "/Applications/Nix Apps/$app_name"
-        done
-            '';
-
-
-      system.defaults = {
-        dock.autohide = true;
-        dock.autohide-delay = null;
-        dock.mru-spaces = false;
-        dock.minimize-to-application = true;
-        dock.show-recents = false;
-        dock.persistent-apps = [
-          "/Applications/Helium.app"
-          "/Applications/Ghostty.app"
-          "/Applications/Bruno.app"
-          "/Applications/DBeaver.app"
-          "/Applications/Notion Calendar.app"
-          "/Applications/Obsidian.app"
-        ];
-        # disable hot corners
-        dock.wvous-tl-corner = 1;
-        dock.wvous-tr-corner = 1;
-        dock.wvous-bl-corner = 1;
-        dock.wvous-br-corner = 1;
-
-        finder.FXPreferredViewStyle = "clmv";
-        finder.AppleShowAllExtensions = true;
-        finder._FXShowPosixPathInTitle = true;
-        finder.FXEnableExtensionChangeWarning = false;
-        finder.ShowPathbar = true;
-        finder.ShowStatusBar = true;
-
-        loginwindow.GuestEnabled = false;
-
-        NSGlobalDomain.AppleICUForce24HourTime = true;
-        NSGlobalDomain.AppleInterfaceStyleSwitchesAutomatically = true;
-        NSGlobalDomain.AppleShowAllExtensions = true;
-        NSGlobalDomain.NSAutomaticSpellingCorrectionEnabled = false;
-        NSGlobalDomain.NSAutomaticCapitalizationEnabled = false;
-        NSGlobalDomain.KeyRepeat = 2;
-        NSGlobalDomain.InitialKeyRepeat = 15;
-
-        screencapture.location = "~/Screenshots";
-        screencapture.type = "png";
-
-        menuExtraClock.ShowSeconds = true;
-
-        trackpad.Clicking = true;
-        trackpad.TrackpadThreeFingerDrag = true;
-      };
-
-      # Set primary user for homebrew and system defaults
-      system.primaryUser = "leonbergmann";
-
-      security.pam.services.sudo_local.touchIdAuth = true;
-
-      nix.enable = true;
-      nix.gc = {
-        automatic = true;
-        interval = { Weekday = 7; Hour = 3; Minute = 0; };
-        options = "--delete-older-than 30d";
-      };
-      nix.optimise.automatic = true;
-      nix.settings = {
-        experimental-features = "nix-command flakes";
-        substituters = [
-          "https://cache.nixos.org"
-          "https://nix-community.cachix.org"
-        ];
-        trusted-public-keys = [
-          "cache.nixos.org-1:6NCHdD59X431o0gWypbMrAURkbJ16ZPMQFGspcDShjY="
-          "nix-community.cachix.org-1:mB9FSh9qf2dCimDSUo8Zy7bkq5CX+/rkCWyvRCYg3Fs="
-        ];
-      };
-
-      services.sketchybar = {
-        enable = true;
-        package = pkgs.sketchybar;
-      };
-
-      # Enable alternative shell support in nix-darwin.
-      programs.fish.enable = true;
-
-      # Set Git commit hash for darwin-version.
-      system.configurationRevision = self.rev or self.dirtyRev or null;
-
-      # Used for backwards compatibility, please read the changelog before changing.
-      # $ darwin-rebuild changelog
-      system.stateVersion = 5;
-
-      # The platform the configuration will be used on.
-      nixpkgs.hostPlatform = "aarch64-darwin";
-    };
-  in
-  {
-    # Build darwin flake using:
-    # $ darwin-rebuild build --flake .#simple
+  outputs = inputs@{ self, nix-darwin, nixpkgs, nix-homebrew, ... }: {
     darwinConfigurations."work" = nix-darwin.lib.darwinSystem {
-      modules = [ 
-          configuration
-          nix-homebrew.darwinModules.nix-homebrew
-          {
-            nix-homebrew = {
-              # Install Homebrew under the default prefix
-              enable = true;
+      modules = [
+        ./modules/packages.nix
+        ./modules/homebrew.nix
+        ./modules/system.nix
+        ./modules/services.nix
+        nix-homebrew.darwinModules.nix-homebrew
+        {
+          nix-homebrew = {
+            enable = true;
+            enableRosetta = true;
+            user = "leonbergmann";
+            autoMigrate = true;
+          };
+        }
+        {
+          nix.enable = true;
+          nix.gc = {
+            automatic = true;
+            interval = { Weekday = 7; Hour = 3; Minute = 0; };
+            options = "--delete-older-than 30d";
+          };
+          nix.optimise.automatic = true;
+          nix.settings = {
+            experimental-features = "nix-command flakes";
+            substituters = [
+              "https://cache.nixos.org"
+              "https://nix-community.cachix.org"
+            ];
+            trusted-public-keys = [
+              "cache.nixos.org-1:6NCHdD59X431o0gWypbMrAURkbJ16ZPMQFGspcDShjY="
+              "nix-community.cachix.org-1:mB9FSh9qf2dCimDSUo8Zy7bkq5CX+/rkCWyvRCYg3Fs="
+            ];
+          };
 
-              # Apple Silicon Only: Also install Homebrew under the default Intel prefix for Rosetta 2
-              enableRosetta = true;
-
-              # User owning the Homebrew prefix
-              user = "leonbergmann";
-
-              # Automatically migrate existing Homebrew installations
-              autoMigrate = true;
-            };
-          }
-        ];
+          system.configurationRevision = self.rev or self.dirtyRev or null;
+          system.stateVersion = 5;
+          nixpkgs.hostPlatform = "aarch64-darwin";
+        }
+      ];
     };
 
-    # Expose the package set, including overlays, for convenience.
     darwinPackages = self.darwinConfigurations."work".pkgs;
   };
 }
