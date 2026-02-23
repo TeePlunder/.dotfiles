@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ config, pkgs, ... }:
 let
   wallpaper = pkgs.fetchurl {
     url = "https://w.wallhaven.cc/full/e7/wallhaven-e7kpl8.png";
@@ -57,6 +57,6 @@ in
   security.pam.services.sudo_local.touchIdAuth = true;
 
   system.activationScripts.wallpaper.text = ''
-    sudo -u leonbergmann osascript -e 'tell application "Finder" to set desktop picture to POSIX file "${wallpaper}"'
+    sudo -u ${config.system.primaryUser} osascript -e 'tell application "Finder" to set desktop picture to POSIX file "${wallpaper}"'
   '';
 }

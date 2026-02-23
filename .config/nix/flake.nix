@@ -16,14 +16,14 @@
         ./modules/system.nix
         ./modules/services.nix
         nix-homebrew.darwinModules.nix-homebrew
-        {
+        ({ config, ... }: {
           nix-homebrew = {
             enable = true;
             enableRosetta = true;
-            user = "leonbergmann";
+            user = config.system.primaryUser;
             autoMigrate = true;
           };
-        }
+        })
         {
           nix.enable = true;
           nix.gc = {
