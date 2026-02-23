@@ -1,4 +1,11 @@
-{ ... }: {
+{ pkgs, ... }:
+let
+  wallpaper = pkgs.fetchurl {
+    url = "https://w.wallhaven.cc/full/e7/wallhaven-e7kpl8.png";
+    sha256 = "1gyfl8yh35c63zmlnsbj9mc8289jl4w794waq26wg6j44qgv1p12";
+  };
+in
+{
   system.defaults = {
     dock.autohide = true;
     dock.autohide-delay = null;
@@ -48,4 +55,8 @@
   system.primaryUser = "leonbergmann";
 
   security.pam.services.sudo_local.touchIdAuth = true;
+
+  system.activationScripts.wallpaper.text = ''
+    sudo -u leonbergmann osascript -e 'tell application "Finder" to set desktop picture to POSIX file "${wallpaper}"'
+  '';
 }
