@@ -9,7 +9,7 @@
   };
 
   outputs = inputs@{ self, nix-darwin, nixpkgs, nix-homebrew, ... }: {
-    darwinConfigurations."work" = nix-darwin.lib.darwinSystem {
+    darwinConfigurations."private" = nix-darwin.lib.darwinSystem {
       modules = [
         ./modules/packages.nix
         ./modules/homebrew.nix
