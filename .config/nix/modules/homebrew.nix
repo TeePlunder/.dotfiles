@@ -51,7 +51,6 @@
       "notion-calendar"
       "helium-browser"
       "claude-code"
-      "lens"
       "font-symbols-only-nerd-font"
     ];
     masApps = {
