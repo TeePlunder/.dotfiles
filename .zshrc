@@ -108,3 +108,5 @@ export PATH="/opt/homebrew/opt/node@20/bin:$PATH"
 export PATH="$PATH:/Users/leonbergmann/.lmstudio/bin"
 # End of LM Studio CLI section
 
+# Created by `pipx` on 2026-02-02 14:30:16
+export PATH="$PATH:/Users/leonbergmann/.local/bin"

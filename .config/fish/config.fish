@@ -1,5 +1,6 @@
 if status is-interactive
-    # Commands to run in interactive sessions can go here
+    set -gx EDITOR nvim
+    set -gx VISUAL nvim
 end
 
 zoxide init fish | source
@@ -22,3 +23,6 @@ alias fh=fzf_history
 set -gx PATH $PATH /Users/leonbergmann/.lmstudio/bin
 # End of LM Studio CLI section
 
+fish_add_path (npm config get prefix)/bin
+fish_add_path ~/.local/bin
+alias db="sqlit"

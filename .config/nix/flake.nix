@@ -8,184 +8,47 @@
     nix-homebrew.url = "github:zhaofengli/nix-homebrew";
   };
 
-  outputs = inputs@{ self, nix-darwin, nixpkgs, nix-homebrew, ... }:
-  let
-    configuration = { pkgs, config, ... }: {
-      nixpkgs.config.allowUnfree = true; # allow to install unfree apps 
+  outputs = inputs@{ self, nix-darwin, nixpkgs, nix-homebrew, ... }: {
+    darwinConfigurations."work" = nix-darwin.lib.darwinSystem {
+      modules = [
+        ./modules/packages.nix
+        ./modules/homebrew.nix
+        ./modules/system.nix
+        ./modules/services.nix
+        nix-homebrew.darwinModules.nix-homebrew
+        ({ config, ... }: {
+          nix-homebrew = {
+            enable = true;
+            enableRosetta = true;
+            user = config.system.primaryUser;
+            autoMigrate = true;
+          };
+        })
+        {
+          nix.enable = true;
+          nix.gc = {
+            automatic = true;
+            interval = { Weekday = 7; Hour = 3; Minute = 0; };
+            options = "--delete-older-than 30d";
+          };
+          nix.optimise.automatic = true;
+          nix.settings = {
+            experimental-features = "nix-command flakes";
+            substituters = [
+              "https://cache.nixos.org"
+              "https://nix-community.cachix.org"
+            ];
+            trusted-public-keys = [
+              "cache.nixos.org-1:6NCHdD59X431o0gWypbMrAURkbJ16ZPMQFGspcDShjY="
+              "nix-community.cachix.org-1:mB9FSh9qf2dCimDSUo8Zy7bkq5CX+/rkCWyvRCYg3Fs="
+            ];
+          };
 
-      # List packages installed in system profile. To search by name, run:
-      # $ nix-env -qaP | grep wget
-      environment.systemPackages =
-        [ 
-            pkgs.alacritty
-            pkgs.mkalias
-            pkgs.sketchybar
-        ];
-
-      homebrew = {
-        enable = true;
-        brews = [
-          "fish"
-          "mas" # to install apps from the app store through the cli
-          "neovim"
-          "lazygit"
-          "lazydocker"
-          "bat"
-          "zoxide"
-          "ripgrep"
-          "curl"
-          "cmake"
-          "go"
-          "gh"
-          "openssh"
-          "go-task"
-          "tldr"
-          "fisher"
-          "td"
-          "yarn"
-          "htop"
-          "coreutils"
-          "pnpm"
-          "fnm"
-          "entr"
-          "neovim"
-          "zellij"
-          "fzf"
-          "bat"
-          "fd"
-          "codex"
-          "opencode"
-          "oven-sh/bun/bun"
-        ];
-        casks = [
-          "shottr"
-          "alt-tab"
-          "hiddenbar"
-          "amethyst"
-          "unnaturalscrollwheels"
-          "zen"
-          "bruno"
-          "trex"
-          "raycast"
-          "dbeaver-community"
-          "docker"
-          "spotify"
-          "aldente"
-          "sf-symbols"
-          "appcleaner"
-          "docker-desktop"
-          "chatgpt"
-          "visual-studio-code"
-          "obsidian"
-          "thebrowsercompany-dia"
-          "omnidisksweeper"
-          "raycast"
-          "notion-calendar"
-          "claude-code"
-        ];
-        onActivation.cleanup = "zap";
-        # onActivation.autoUpdate = true;
-        # onActivation.upgrade = true;
-      };
-
-      fonts.packages = [
-        pkgs.nerd-fonts."jetbrains-mono"
+          system.configurationRevision = self.rev or self.dirtyRev or null;
+          system.stateVersion = 5;
+          nixpkgs.hostPlatform = "aarch64-darwin";
+        }
       ];
-
-      # Fixing Mac Spotlight to get the nix applications like alacritty 
-      system.activationScripts.applications.text = let
-        env = pkgs.buildEnv {
-          name = "system-applications";
-          paths = config.environment.systemPackages;
-          pathsToLink = "/Applications";
-        };
-      in
-        pkgs.lib.mkForce ''
-        # Set up applications.
-        echo "setting up /Applications..." >&2
-        rm -rf /Applications/Nix\ Apps
-        mkdir -p /Applications/Nix\ Apps
-        find ${env}/Applications -maxdepth 1 -type l -exec readlink '{}' + |
-        while read -r src; do
-          app_name=$(basename "$src")
-          echo "copying $src" >&2
-          ${pkgs.mkalias}/bin/mkalias "$src" "/Applications/Nix Apps/$app_name"
-        done
-            '';
-
-
-      system.defaults = {
-        dock.autohide = true;
-        dock.autohide-delay = null;
-        dock.persistent-apps = [
-          "/Applications/Dia.app"
-          "/Applications/Alacritty.app"
-          "/Applications/Bruno.app"
-        ];
-        finder.FXPreferredViewStyle = "clmv";
-        finder.AppleShowAllExtensions = true;
-        finder.ShowPathbar = true;
-        finder.ShowStatusBar = true;
-        loginwindow.GuestEnabled = false;
-        NSGlobalDomain.AppleICUForce24HourTime = true;
-        NSGlobalDomain.AppleInterfaceStyle = "Dark";
-        NSGlobalDomain.KeyRepeat = 2;
-        trackpad.Clicking = true;
-        trackpad.TrackpadThreeFingerDrag = true;
-      };
-
-      # Set primary user for homebrew and system defaults
-      system.primaryUser = "leonbergmann";
-
-      # Make sure nix-darwin manages Nix itself:
-      nix.enable = true;  # manage the Nix installation + daemon
-      # nix.package = pkgs.nix;
-
-      services.sketchybar = {
-        enable = true;
-        package = pkgs.sketchybar;
-      };
-
-      # Necessary for using flakes on this system.
-      nix.settings.experimental-features = "nix-command flakes";
-
-      # Enable alternative shell support in nix-darwin.
-      programs.fish.enable = true;
-
-      # Set Git commit hash for darwin-version.
-      system.configurationRevision = self.rev or self.dirtyRev or null;
-
-      # Used for backwards compatibility, please read the changelog before changing.
-      # $ darwin-rebuild changelog
-      system.stateVersion = 5;
-
-      # The platform the configuration will be used on.
-      nixpkgs.hostPlatform = "aarch64-darwin";
-    };
-  in
-  {
-    # Build darwin flake using:
-    # $ darwin-rebuild build --flake .#simple
-    darwinConfigurations."private" = nix-darwin.lib.darwinSystem {
-      modules = [ 
-          configuration
-          nix-homebrew.darwinModules.nix-homebrew
-          {
-            nix-homebrew = {
-              # Install Homebrew under the default prefix
-              enable = true;
-
-              # Apple Silicon Only: Also install Homebrew under the default Intel prefix for Rosetta 2
-              enableRosetta = true;
-
-              # User owning the Homebrew prefix
-              user = "leonbergmann";
-
-              # Automatically migrate existing Homebrew installations
-              autoMigrate = true;
-            };
-          }
-        ];
     };
 
     # Expose the package set, including overlays, for convenience.
