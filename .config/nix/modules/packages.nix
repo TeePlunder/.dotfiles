@@ -28,6 +28,7 @@
     entr
     k9s
     pipx
+    stylua
   ];
 
   fonts.packages = [
