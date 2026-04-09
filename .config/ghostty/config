@@ -2,3 +2,4 @@ theme = light:Catppuccin Latte,dark:Catppuccin Mocha
 window-decoration = false
 macos-titlebar-style = hidden
 keybind = shift+enter=text:\n
+confirm-close-surface = false
