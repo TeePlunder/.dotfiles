@@ -38,3 +38,7 @@ nix flake update
 - Fish functions: one file per function in `fish/functions/`
 - Neovim plugins: one file per plugin in `nvim/lua/plugins/`, lazy-loaded
 - Sketchybar: items define UI elements, plugins provide data scripts
+
+## Git Commits
+
+Split changes into small, focused commits — one logical change per commit. Use conventional commit prefixes: `fix`, `feat`, `refactor`, `perf`, `chore`, `docs`. Scope to the config area when relevant, e.g. `fix(nvim):`, `chore(fish):`. Keep messages concise.
