@@ -26,6 +26,7 @@
       "sevenzip"
       "poppler"
       "resvg"
+      "hashicorp/tap/terraform"
     ];
     casks = [
       "shottr"
