@@ -54,6 +54,7 @@
       "claude-code"
       "lens"
       "font-symbols-only-nerd-font"
+      "microsoft-teams"
     ];
     masApps = {
       # "App Name" = Apple ID;
