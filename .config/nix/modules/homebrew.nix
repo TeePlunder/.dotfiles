@@ -26,6 +26,7 @@
       "sevenzip"
       "poppler"
       "resvg"
+      "hashicorp/tap/terraform"
     ];
     casks = [
       "shottr"
@@ -52,6 +53,7 @@
       "helium-browser"
       "claude-code"
       "font-symbols-only-nerd-font"
+      "microsoft-teams"
     ];
     masApps = {
       # "App Name" = Apple ID;
