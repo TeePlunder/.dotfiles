@@ -8,7 +8,6 @@
       "fish"
       "fisher"
       "mas"
-      "neovim"
       "zellij"
       "openssh"
       "fnm"
