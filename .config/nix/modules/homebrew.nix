@@ -46,6 +46,7 @@
       "claude-code"
       "font-symbols-only-nerd-font"
       "codex"
+      "handy"
     ];
     masApps = {
       "AusweisApp" = 948660805;
