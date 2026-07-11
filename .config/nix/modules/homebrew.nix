@@ -30,7 +30,6 @@
       "alt-tab"
       "amethyst"
       "unnaturalscrollwheels"
-      "zen"
       "bruno"
       "raycast"
       "dbeaver-community"
