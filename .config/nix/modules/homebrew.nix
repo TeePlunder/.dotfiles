@@ -49,7 +49,22 @@
       "codex"
     ];
     masApps = {
-      # "App Name" = Apple ID;
+      "AusweisApp" = 948660805;
+      "Hidden Bar" = 1452453066;
+      "keymapp" = 6472865291;
+      "Microsoft Word" = 462054704;
+      "MyWhoosh Indoor Cycling App" = 1498889644;
+      "Pages" = 409201541;
+      "Phiewer (lite)" = 1226444549;
+      "Pixea" = 1507782672;
+      "Prime Video" = 545519333;
+      "Print to PDF" = 1639234272;
+      "QR Capture" = 1369524274;
+      "QuickShade" = 931571202;
+      "Unzip - RAR ZIP 7Z Unarchiver" = 1537056818;
+      "VoiceAI" = 6444030605;
+      "WhatsApp" = 310633997;
+      "xFormula" = 1503622988;
     };
     onActivation.cleanup = "zap";
     onActivation.autoUpdate = false;
