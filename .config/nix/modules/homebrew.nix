@@ -11,31 +11,22 @@
       "neovim"
       "zellij"
       "openssh"
-      "fnm"
-      "pnpm"
-      "yarn"
-      "oven-sh/bun/bun"
       "dark-notify"
-      "azure-cli"
-      "azcopy"
-      "opencode"
-      "go-task"
       "td"
       "lazysql"
       "sevenzip"
       "poppler"
       "resvg"
       "hashicorp/tap/terraform"
+      "mise"
     ];
     casks = [
       "shottr"
       "alt-tab"
-      "hiddenbar"
       "amethyst"
       "unnaturalscrollwheels"
       "zen"
       "bruno"
-      "trex"
       "raycast"
       "dbeaver-community"
       "docker-desktop"
@@ -45,21 +36,18 @@
       "zed"
       "ghostty"
       "appcleaner"
-      "chatgpt"
-      "visual-studio-code"
       "obsidian"
       "notion-calendar"
       "helium-browser"
       "claude-code"
       "font-symbols-only-nerd-font"
-      "microsoft-teams"
       "codex"
     ];
     masApps = {
       # "App Name" = Apple ID;
     };
     onActivation.cleanup = "zap";
-    # onActivation.autoUpdate = true;
-    # onActivation.upgrade = true;
+    onActivation.autoUpdate = true;
+    onActivation.upgrade = true;
   };
 }

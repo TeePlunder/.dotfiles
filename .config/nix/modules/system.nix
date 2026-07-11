@@ -11,7 +11,6 @@
       "/Applications/Ghostty.app"
       "/Applications/Bruno.app"
       "/Applications/DBeaver.app"
-      "/Applications/Notion Calendar.app"
       "/Applications/Obsidian.app"
     ];
     # disable hot corners

@@ -15,7 +15,6 @@
         ./modules/homebrew.nix
         ./modules/system.nix
         ./modules/services.nix
-        ./modules/wallpaper.nix
         nix-homebrew.darwinModules.nix-homebrew
         ({ config, ... }: {
           nix-homebrew = {
