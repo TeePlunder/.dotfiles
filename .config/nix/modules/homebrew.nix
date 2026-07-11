@@ -3,6 +3,7 @@
     enable = true;
     taps = [
       "cormacrelf/tap"
+      "felixkratz/formulae"
     ];
     brews = [
       "fish"
@@ -19,6 +20,10 @@
       "resvg"
       "hashicorp/tap/terraform"
       "mise"
+      {
+        name = "felixkratz/formulae/sketchybar";
+        start_service = true;
+      }
     ];
     casks = [
       "shottr"
@@ -47,7 +52,7 @@
       # "App Name" = Apple ID;
     };
     onActivation.cleanup = "zap";
-    onActivation.autoUpdate = true;
+    onActivation.autoUpdate = false;
     onActivation.upgrade = true;
   };
 }

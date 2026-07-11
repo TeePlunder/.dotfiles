@@ -3,7 +3,6 @@
 
   environment.systemPackages = with pkgs; [
     mkalias
-    sketchybar
     bat
     ripgrep
     fd
