@@ -17,7 +17,6 @@
     lazydocker
     ffmpeg
     imagemagick
-    go
     cmake
     kubectl
     gh
@@ -25,7 +24,6 @@
     stow
     entr
     k9s
-    pipx
     stylua
   ];
 

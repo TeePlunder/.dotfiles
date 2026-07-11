@@ -4,6 +4,7 @@ if status is-interactive
 end
 
 zoxide init fish | source
+mise activate fish | source
 
 # Generated for envman. Do not edit.
 test -s ~/.config/envman/load.fish; and source ~/.config/envman/load.fish
@@ -23,13 +24,5 @@ alias fh=fzf_history
 set -gx PATH $PATH /Users/leonbergmann/.lmstudio/bin
 # End of LM Studio CLI section
 
-fish_add_path (npm config get prefix)/bin
 fish_add_path ~/.local/bin
 alias db="sqlit"
-
-# pnpm
-set -gx PNPM_HOME "/Users/leonbergmann/Library/pnpm"
-if not string match -q -- $PNPM_HOME $PATH
-  set -gx PATH "$PNPM_HOME" $PATH
-end
-# pnpm end

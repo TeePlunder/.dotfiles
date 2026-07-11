@@ -1,0 +1,10 @@
+[tools]
+node = "lts"
+python = "latest"
+go = "latest"
+java = "latest"
+deno = "latest"
+pnpm = "latest"
+yarn = "latest"
+pipx = "latest"
+powershell = "latest"
