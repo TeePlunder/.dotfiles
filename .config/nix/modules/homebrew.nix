@@ -66,8 +66,14 @@
       "WhatsApp" = 310633997;
       "xFormula" = 1503622988;
     };
+    global.autoUpdate = false;
+
     onActivation.cleanup = "zap";
     onActivation.autoUpdate = false;
     onActivation.upgrade = true;
+    onActivation.extraEnv = {
+      HOMEBREW_NO_ANALYTICS = "1";
+      HOMEBREW_NO_ENV_HINTS = "1";
+    };
   };
 }
