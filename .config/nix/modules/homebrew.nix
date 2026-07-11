@@ -18,7 +18,6 @@
       "dark-notify"
       "azure-cli"
       "azcopy"
-      "codex"
       "opencode"
       "go-task"
       "td"
@@ -54,6 +53,7 @@
       "claude-code"
       "font-symbols-only-nerd-font"
       "microsoft-teams"
+      "codex"
     ];
     masApps = {
       # "App Name" = Apple ID;
