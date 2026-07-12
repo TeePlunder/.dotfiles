@@ -24,6 +24,7 @@
         name = "felixkratz/formulae/sketchybar";
         start_service = true;
       }
+      "wget"
     ];
     casks = [
       "shottr"
