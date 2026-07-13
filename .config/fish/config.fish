@@ -52,3 +52,6 @@ if not string match -q -- $PNPM_HOME $PATH
   set -gx PATH "$PNPM_HOME" $PATH
 end
 # pnpm end
+
+/Users/leonbergmann/.local/bin/mise activate fish | source # added by https://mise.run/fish
+fish_add_path ~/.local/share/mise/shims
