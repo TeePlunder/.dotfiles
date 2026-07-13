@@ -1,0 +1,527 @@
+[
+  {
+    "query": "SELECT * FROM `sweetconnect_dev_j0jt`.`file` where id like '13338cb0-a52c-4088-a764-dd830a8c9a35' or id like '57876540-15d7-4850-a908-8fd913e1a026'",
+    "timestamp": "2026-04-08T13:29:36.980509",
+    "connection_name": "dev"
+  },
+  {
+    "query": "SELECT * FROM `sweetconnect_dev_j0jt`.`file` where id like '13338cb0-a52c-4088-a764-dd830a8c9a35' and id like '57876540-15d7-4850-a908-8fd913e1a026'",
+    "timestamp": "2026-04-08T13:29:29.883988",
+    "connection_name": "dev"
+  },
+  {
+    "query": "SELECT * FROM `sweetconnect_dev_j0jt`.`assetfile` where asset_id like '4edfc685-b0a8-4ed5-a73b-ca0169508596'",
+    "timestamp": "2026-04-08T13:28:38.898548",
+    "connection_name": "dev"
+  },
+  {
+    "query": "SELECT * FROM `sweetconnect_dev_j0jt`.`assetfile` LIMIT 100",
+    "timestamp": "2026-04-08T13:28:06.213410",
+    "connection_name": "dev"
+  },
+  {
+    "query": "select * from file where id like '5b0b882b-2193-40bc-ae7e-e95ec426fbf6'",
+    "timestamp": "2026-03-16T14:21:47.452358",
+    "connection_name": "dev"
+  },
+  {
+    "query": "select * from file where organization_id like '4f%'",
+    "timestamp": "2026-02-02T15:37:48.953160",
+    "connection_name": "dev"
+  },
+  {
+    "query": "select * from file",
+    "timestamp": "2026-02-02T15:37:27.549530",
+    "connection_name": "dev"
+  },
+  {
+    "query": "select * from asset",
+    "timestamp": "2026-02-02T15:37:08.353031",
+    "connection_name": "dev"
+  },
+  {
+    "query": "SELECT * FROM `sweetconnect_test_en1k`.`file` where filename like '7_Operation.txt'",
+    "timestamp": "2026-04-21T19:49:25.733884",
+    "connection_name": "test"
+  },
+  {
+    "query": "SELECT * FROM `sweetconnect_test_en1k`.`file` where displayname like '7_Operation.txt'",
+    "timestamp": "2026-04-21T19:49:21.571223",
+    "connection_name": "test"
+  },
+  {
+    "query": "SELECT * FROM `sweetconnect_test_en1k`.`file` where displayname like 'Fault%'",
+    "timestamp": "2026-04-21T13:28:34.543503",
+    "connection_name": "test"
+  },
+  {
+    "query": "SELECT * FROM `sweetconnect_test_en1k`.`file` LIMIT 100",
+    "timestamp": "2026-04-21T13:28:20.409542",
+    "connection_name": "test"
+  },
+  {
+    "query": "DELETE FROM filesharerecipient WHERE recipient_user_id = '08642a2c-f470-4427-a894-1782c7d9cdc0';",
+    "timestamp": "2026-03-13T14:07:31.435704",
+    "connection_name": "test"
+  },
+  {
+    "query": "SELECT * FROM `sweetconnect_test_en1k`.`filesharerecipient` LIMIT 100",
+    "timestamp": "2026-03-13T14:07:25.537561",
+    "connection_name": "test"
+  },
+  {
+    "query": "DELETE FROM fileshare WHERE id = 'e9da06ab-c6dc-4452-9395-7562ce95ad15';",
+    "timestamp": "2026-03-13T14:07:20.507428",
+    "connection_name": "test"
+  },
+  {
+    "query": "SELECT * FROM `sweetconnect_test_en1k`.`fileshare` LIMIT 100",
+    "timestamp": "2026-03-13T14:07:12.036799",
+    "connection_name": "test"
+  },
+  {
+    "query": "SELECT * FROM `sweetconnect_test_en1k`.`asset` LIMIT 100",
+    "timestamp": "2026-03-03T09:47:40.114564",
+    "connection_name": "test"
+  },
+  {
+    "query": "SELECT * FROM `app`.`AssetFile` LIMIT 100",
+    "timestamp": "2026-05-08T08:18:32.101693",
+    "connection_name": "local"
+  },
+  {
+    "query": "SELECT * FROM `app`.`File` LIMIT 100",
+    "timestamp": "2026-05-08T08:17:24.617960",
+    "connection_name": "local"
+  },
+  {
+    "query": "SELECT * FROM File where id like 'c5fb6d03-adc1-4d20-a012-9a574bcaade5'",
+    "timestamp": "2026-04-09T14:07:48.465476",
+    "connection_name": "local"
+  },
+  {
+    "query": "SELECT * FROM `app`.`AssetFile` left join File as f on f.id = file_id",
+    "timestamp": "2026-04-09T14:04:22.896090",
+    "connection_name": "local"
+  },
+  {
+    "query": "SELECT * FROM `app`.`AssetFile` left join File as f on f.id = file_id where file_id like 'c5fb6d03-adc1-4d20-a012-9a574bcaade5'",
+    "timestamp": "2026-04-09T13:57:56.587313",
+    "connection_name": "local"
+  },
+  {
+    "query": "UPDATE File SET filename = 'Wymiana uk\u0142adu zgrzewania poprzecznego' WHERE id = 'c5fb6d03-adc1-4d20-a012-9a574bcaade5';",
+    "timestamp": "2026-04-09T13:57:47.916492",
+    "connection_name": "local"
+  },
+  {
+    "query": "SELECT * FROM `app`.`FileShareRecipient` where recipient_user_id like 'b22f2b4e-a548-4440-8156-7f45cece0ad7'",
+    "timestamp": "2026-03-27T15:34:26.538251",
+    "connection_name": "local"
+  },
+  {
+    "query": "SELECT * FROM `app`.`FileShareRecipient` LIMIT 100",
+    "timestamp": "2026-03-27T15:34:10.837207",
+    "connection_name": "local"
+  },
+  {
+    "query": "SELECT * FROM `app`.`FileShare` LIMIT 100",
+    "timestamp": "2026-03-27T15:33:55.691528",
+    "connection_name": "local"
+  },
+  {
+    "query": "SELECT * FROM `app`.`FileLanguage` LIMIT 100",
+    "timestamp": "2026-03-24T12:02:27.008598",
+    "connection_name": "local"
+  },
+  {
+    "query": "SELECT * FROM `app`.`MaintenanceFile` LIMIT 100",
+    "timestamp": "2026-03-24T12:02:22.982407",
+    "connection_name": "local"
+  },
+  {
+    "query": "SELECT * FROM `app`.`Language` LIMIT 100",
+    "timestamp": "2026-03-24T12:02:16.465904",
+    "connection_name": "local"
+  },
+  {
+    "query": "SELECT * FROM `app`.`LanguageTranslation` LIMIT 100",
+    "timestamp": "2026-03-24T12:02:13.423690",
+    "connection_name": "local"
+  },
+  {
+    "query": "SELECT * FROM `app`.`Asset` LIMIT 100",
+    "timestamp": "2026-03-24T11:35:49.693655",
+    "connection_name": "local"
+  },
+  {
+    "query": "SELECT * FROM `app`.`Category` LIMIT 100",
+    "timestamp": "2026-03-24T11:35:18.870359",
+    "connection_name": "local"
+  },
+  {
+    "query": "SELECT * FROM `app`.`FileShareRecipient` where recipient_user_id like '1c7b6e40-7072-48c8-94bf-117beac597ce'",
+    "timestamp": "2026-03-17T14:14:04.010764",
+    "connection_name": "local"
+  },
+  {
+    "query": "SELECT * FROM `app`.`FileShare` where recipient_user_id like '14665cde-6215-444a-b751-b4b57c456666' LIMIT 100",
+    "timestamp": "2026-03-03T09:58:48.097074",
+    "connection_name": "local"
+  },
+  {
+    "query": "UPDATE FileShare SET sender_organization_id = '9dbc355b-20ae-452b-823d-6c5fe9253fa8' WHERE id = '647f41ca-da31-47aa-bfd4-114f76415869';",
+    "timestamp": "2026-03-03T09:58:43.430589",
+    "connection_name": "local"
+  },
+  {
+    "query": "SELECT * FROM `app`.`AssetFile` where file_id like '91c227f3-9577-4d05-91e9-d7376a1f34b4';",
+    "timestamp": "2026-03-03T09:49:39.831631",
+    "connection_name": "local"
+  },
+  {
+    "query": "SELECT * FROM `app`.`File` LIMIT 100;",
+    "timestamp": "2026-03-03T09:48:45.249045",
+    "connection_name": "local"
+  },
+  {
+    "query": "SELECT * FROM `app`.`CategoryTranslation` LIMIT 100",
+    "timestamp": "2026-02-18T14:57:46.202924",
+    "connection_name": "local"
+  },
+  {
+    "query": "delete from FileShare",
+    "timestamp": "2026-02-18T11:39:09.574278",
+    "connection_name": "local"
+  },
+  {
+    "query": "select * from File where id like 'd82c1c95-6d47-4325-b8ae-a1bceb42dd0c'",
+    "timestamp": "2026-02-11T10:53:29.216227",
+    "connection_name": "local"
+  },
+  {
+    "query": "SELECT * FROM `app`.`migrations` LIMIT 100",
+    "timestamp": "2026-02-03T15:29:05.629145",
+    "connection_name": "local"
+  },
+  {
+    "query": "select * from File",
+    "timestamp": "2026-02-03T13:51:44.376480",
+    "connection_name": "local"
+  },
+  {
+    "query": "SELECT COLUMN_NAME FROM INFORMATION_SCHEMA.COLUMNS\n  WHERE TABLE_NAME = 'sio_llm___chat_logs'\n  AND COLUMN_NAME IN ('content_blocks', 'reasoning_steps');",
+    "timestamp": "2026-02-02T15:50:42.039820",
+    "connection_name": "local"
+  },
+  {
+    "query": "SELECT * FROM sio_llm____migrations WHERE name LIKE '%ContentBlocks%';",
+    "timestamp": "2026-02-02T15:50:31.779536",
+    "connection_name": "local"
+  },
+  {
+    "query": "select * from sio_llm____migrations where name like '%ContentBlocks%';",
+    "timestamp": "2026-02-02T15:49:32.070048",
+    "connection_name": "local"
+  },
+  {
+    "query": "SELECT * FROM `sweetconnect_prod_wl4h`.`file` where purpose like 'Maintenance'",
+    "timestamp": "2026-05-12T13:49:24.289324",
+    "connection_name": "prod"
+  },
+  {
+    "query": "SELECT * FROM `sweetconnect_prod_wl4h`.`file` LIMIT 100",
+    "timestamp": "2026-05-12T13:49:04.249125",
+    "connection_name": "prod"
+  },
+  {
+    "query": "select * from asset where id like '3cae8337-9a92-45a4-81ab-fdeed3a03506' or id like 'b019f76e-230c-41b7-afe9-c8ed1b1ee92d' or id like 'c8b84104-5f92-4c1e-a5cf-c5630ec83ba4'",
+    "timestamp": "2026-05-04T08:58:37.409256",
+    "connection_name": "prod"
+  },
+  {
+    "query": "select * from file as f left join assetfile as af on af.file_id = f.id where id like 'c8b84104-5f92-4c1e-a5cf-c5630ec83ba4'",
+    "timestamp": "2026-05-04T08:57:49.234989",
+    "connection_name": "prod"
+  },
+  {
+    "query": "select * from asset where id like 'd521f020-c67b-4355-8c06-37a547742fd6' or id like 'b019f76e-230c-41b7-afe9-c8ed1b1ee92d' or id like 'c8b84104-5f92-4c1e-a5cf-c5630ec83ba4'",
+    "timestamp": "2026-05-04T08:57:06.836519",
+    "connection_name": "prod"
+  },
+  {
+    "query": "select * from file where id like 'c8b84104-5f92-4c1e-a5cf-c5630ec83ba4'",
+    "timestamp": "2026-05-04T08:53:40.542645",
+    "connection_name": "prod"
+  },
+  {
+    "query": "select * from file where\ndisplayname like 'Manual Cross%' or filename like 'Manual Cross%'",
+    "timestamp": "2026-04-29T11:12:25.029539",
+    "connection_name": "prod"
+  },
+  {
+    "query": "select * from assetfile where file_id = 'a4073fe1-8fea-42fe-a4c4-1fa8b4245cc7'",
+    "timestamp": "2026-04-29T11:12:15.691322",
+    "connection_name": "prod"
+  },
+  {
+    "query": "select * from assetfile where file_id like 'a4073fe1-8fea-42fe-a4c4-1fa8b4245cc7'",
+    "timestamp": "2026-04-29T11:12:06.770750",
+    "connection_name": "prod"
+  },
+  {
+    "query": "select * from file where \n(organization_id = '8d1df982-90f9-4de3-aa2a-f65f61ca383a' or \norganization_id = '5a89d8d9-5554-4985-87ba-c07ad5076b60' or\norganization_id = '89ca3eb4-04c5-4bd5-bda8-50df97def18d') and \ndisplayname like 'Manual Cross%' or filename like 'Manual Cross%'",
+    "timestamp": "2026-04-29T10:15:07.293899",
+    "connection_name": "prod"
+  },
+  {
+    "query": "select * from file where \n(organization_id = '8d1df982-90f9-4de3-aa2a-f65f61ca383a' or \norganization_id = '5a89d8d9-5554-4985-87ba-c07ad5076b60' or\norganization_id = '89ca3eb4-04c5-4bd5-bda8-50df97def18d') and \ndisplayname like 'Manual Cross%'",
+    "timestamp": "2026-04-29T10:14:50.618335",
+    "connection_name": "prod"
+  },
+  {
+    "query": "select * from file where \norganization_id = '8d1df982-90f9-4de3-aa2a-f65f61ca383a' or \norganization_id = '5a89d8d9-5554-4985-87ba-c07ad5076b60' or\norganization_id = '89ca3eb4-04c5-4bd5-bda8-50df97def18d' and \ndisplayname like 'Manual Cross%'",
+    "timestamp": "2026-04-29T10:13:06.810597",
+    "connection_name": "prod"
+  },
+  {
+    "query": "select * from file where \norganization_id = '8d1df982-90f9-4de3-aa2a-f65f61ca383a' or \norganization_id = '5a89d8d9-5554-4985-87ba-c07ad5076b60' or\norganization_id = '89ca3eb4-04c5-4bd5-bda8-50df97def18d'",
+    "timestamp": "2026-04-29T10:12:21.348385",
+    "connection_name": "prod"
+  },
+  {
+    "query": "select * from file where id like '2d3958bd-e26e-4904-8f08-71a34a7cefef' or id like '2748f5a9-9f8f-41b7-a917-d02ca3524262'",
+    "timestamp": "2026-04-27T07:37:21.251901",
+    "connection_name": "prod"
+  },
+  {
+    "query": "select * from file where id like '2d3958bd-e26e-4904-8f08-71a34a7cefef'",
+    "timestamp": "2026-04-27T07:36:07.035129",
+    "connection_name": "prod"
+  },
+  {
+    "query": "select count(*) from file as f\n  left join assetfile as af on af.file_id = f.id\n  where af.file_id is null and f.organization_id like '44a7107f-3b9c-446b-a088-bf343accf538'",
+    "timestamp": "2026-04-23T15:37:31.016340",
+    "connection_name": "prod"
+  },
+  {
+    "query": "select count(*) from file as f\n  left join assetfile as af on af.file_id = f.id\n  where af.file_id is null",
+    "timestamp": "2026-04-23T15:37:16.814519",
+    "connection_name": "prod"
+  },
+  {
+    "query": "select * from file where id like 'f2a519b0-fdab-4f2d-a6d7-c561a1b4ba40'",
+    "timestamp": "2026-04-23T15:36:24.798141",
+    "connection_name": "prod"
+  },
+  {
+    "query": "select * from assetfile where file_id like 'f2a519b0-fdab-4f2d-a6d7-c561a1b4ba40'",
+    "timestamp": "2026-04-23T15:25:48.105782",
+    "connection_name": "prod"
+  },
+  {
+    "query": "select * from maintenancefile where file_id like 'f2a519b0-fdab-4f2d-a6d7-c561a1b4ba40'",
+    "timestamp": "2026-04-23T15:25:36.572903",
+    "connection_name": "prod"
+  },
+  {
+    "query": "select * from file as f join assetfile as af on af.file_id = f.id  where f.id like 'f2a519b0-fdab-4f2d-a6d7-c561a1b4ba40'",
+    "timestamp": "2026-04-23T15:23:55.514831",
+    "connection_name": "prod"
+  },
+  {
+    "query": "select count(*) from assetfile as af join file as f on f.id = af.file_id where f.id is null",
+    "timestamp": "2026-04-23T15:22:20.167206",
+    "connection_name": "prod"
+  },
+  {
+    "query": "select count(*) from assetfile as af join file as f on f.id != af.file_id where f.id is null",
+    "timestamp": "2026-04-23T15:22:13.671519",
+    "connection_name": "prod"
+  },
+  {
+    "query": "select count(*) from assetfile as af join file as f on f.id != af.file_id",
+    "timestamp": "2026-04-23T15:16:35.333154",
+    "connection_name": "prod"
+  },
+  {
+    "query": "select * from file as f join assetfile as af on af.file_id = f.id  where id like 'f2a519b0-fdab-4f2d-a6d7-c561a1b4ba40'",
+    "timestamp": "2026-04-23T15:09:53.508587",
+    "connection_name": "prod"
+  },
+  {
+    "query": "select * from file as f join assetfile as af on af.file_id like f.id  where id like 'f2a519b0-fdab-4f2d-a6d7-c561a1b4ba40'",
+    "timestamp": "2026-04-23T15:09:05.610541",
+    "connection_name": "prod"
+  },
+  {
+    "query": "select * from file where displayname like '%Alarm 198 \u2013 Vacuum System \u2013 Pressure Difference Filter Too High%'",
+    "timestamp": "2026-04-22T11:34:58.628147",
+    "connection_name": "prod"
+  },
+  {
+    "query": "SELECT * FROM `sweetconnect_prod_wl4h`.`file` where organization_id like '44a7107f-3b9c-446b-a088-bf343accf538'",
+    "timestamp": "2026-04-21T13:11:29.477605",
+    "connection_name": "prod"
+  },
+  {
+    "query": "SELECT * FROM `sweetconnect_prod_wl4h`.`file` where organization_id like '44a7107f-3b9c-446b-a088-bf343accf538' and filename like '%Wartung%'",
+    "timestamp": "2026-04-21T13:11:21.448644",
+    "connection_name": "prod"
+  },
+  {
+    "query": "SELECT * FROM `sweetconnect_prod_wl4h`.`file` where organization_id like '44a7107f-3b9c-446b-a088-bf343accf538' and filename like '%wartung%'",
+    "timestamp": "2026-04-21T13:11:09.003185",
+    "connection_name": "prod"
+  },
+  {
+    "query": "select * from file as f left join assetfile as af ON af.file_id = f.id where af.asset_id like '9b2183dc-2b61-406f-80cf-0e33fd261d03'",
+    "timestamp": "2026-04-14T16:02:58.285598",
+    "connection_name": "prod"
+  },
+  {
+    "query": "SELECT * FROM `sweetconnect_prod_wl4h`.`asset` where name like 'EP2%'",
+    "timestamp": "2026-04-14T16:01:15.084145",
+    "connection_name": "prod"
+  },
+  {
+    "query": "SELECT * FROM `sweetconnect_prod_wl4h`.`asset` LIMIT 100",
+    "timestamp": "2026-04-14T16:00:56.825285",
+    "connection_name": "prod"
+  },
+  {
+    "query": "UPDATE file SET mimetype = 'application/zip' WHERE mimetype = 'application/x-zip-compressed';",
+    "timestamp": "2026-04-13T14:44:17.295700",
+    "connection_name": "prod"
+  },
+  {
+    "query": "SELECT * FROM `sweetconnect_prod_wl4h`.`file` where mimetype like '%x-zip%'",
+    "timestamp": "2026-04-13T11:35:32.002342",
+    "connection_name": "prod"
+  },
+  {
+    "query": "SELECT * FROM `sweetconnect_prod_wl4h`.`file` where mimetype like '%zip%'",
+    "timestamp": "2026-04-13T11:35:16.334728",
+    "connection_name": "prod"
+  },
+  {
+    "query": "SELECT * FROM `sweetconnect_prod_wl4h`.`file` where organization_id like '6c9ef5b7-a3cc-4ff9-9128-07ca7ffca1cb'",
+    "timestamp": "2026-04-09T13:59:25.429307",
+    "connection_name": "prod"
+  },
+  {
+    "query": "SHOW COLUMNS FROM sio_llm___agent_assistant;",
+    "timestamp": "2026-04-08T08:54:26.604409",
+    "connection_name": "prod"
+  },
+  {
+    "query": "SHOW TABLES LIKE '%agent_assistant%';",
+    "timestamp": "2026-04-08T08:48:10.570340",
+    "connection_name": "prod"
+  },
+  {
+    "query": "-- Copy selected agents (+ their assistants) to a new tenant\n-- 1. Set target tenant ID\n-- 2. Add agent IDs to the @agent_ids list\n-- 3. Run the preview SELECTs first, then uncomment the INSERTs\n\nSET @target_tenant = '12a87f17-318a-4f0a-8bb4-214be1a75a50';\n\n-- Agent IDs to copy (comma-separated)\nSET @agent_ids = 'a94716cb-ec88-47cd-bab7-d2252c8f7f39';\n\n-- Create temp table from comma-separated IDs\nDROP TEMPORARY TABLE IF EXISTS tmp_agent_ids;\nCREATE TEMPORARY TABLE tmp_agent_ids (id CHAR(36) PRIMARY KEY);\nSET @sql = CONCAT(\n  'INSERT INTO tmp_agent_ids (id) VALUES (''',\n  REPLACE(@agent_ids, ',', '''),('''),\n  ''')'\n);\nPREPARE stmt FROM @sql;\nEXECUTE stmt;\nDEALLOCATE PREPARE stmt;\n\n-- Collect assistant IDs linked to selected agents\nDROP TEMPORARY TABLE IF EXISTS tmp_assistant_ids;\nCREATE TEMPORARY TABLE tmp_assistant_ids AS\n  SELECT DISTINCT assistant_id AS id\n  FROM sio_llm__agent_assistants\n  WHERE agent_id IN (SELECT id FROM tmp_agent_ids);\n\n-- ID mapping tables (old ID -> new UUID)\nDROP TEMPORARY TABLE IF EXISTS tmp_agent_map;\nCREATE TEMPORARY TABLE tmp_agent_map (\n  old_id CHAR(36) PRIMARY KEY,\n  new_id CHAR(36) NOT NULL\n);\nINSERT INTO tmp_agent_map (old_id, new_id)\n  SELECT id, UUID() FROM tmp_agent_ids;\n\nDROP TEMPORARY TABLE IF EXISTS tmp_assistant_map;\nCREATE TEMPORARY TABLE tmp_assistant_map (\n  old_id CHAR(36) PRIMARY KEY,\n  new_id CHAR(36) NOT NULL\n);\nINSERT INTO tmp_assistant_map (old_id, new_id)\n  SELECT id, UUID() FROM tmp_assistant_ids;\n\n-- =====================================================\n-- Preview\n-- =====================================================\nSELECT 'AGENTS' AS entity, a.id, a.name, m.new_id\n  FROM sio_llm__agent_entity a\n  JOIN tmp_agent_map m ON a.id = m.old_id;\n\nSELECT 'ASSISTANTS' AS entity, a.id, a.name, a.type, m.new_id\n  FROM sio_llm__agent_assistant a\n  JOIN tmp_assistant_map m ON a.id = m.old_id;\n\n-- =====================================================\n-- Copy (uncomment to run)\n-- =====================================================\n\n-- Agents\n-- INSERT INTO sio_llm__agent_entity\n--   (id, tenantId, name, llmConfig, description, imageId, instructions,\n--    isDefault, tools, inheritInstructions, inheritAssistants,\n--    useInstructionsAsPrompt, welcomeMessage, allowedManufacturerIds,\n--    createdAt, updatedAt)\n-- SELECT\n--   m.new_id, @target_tenant, a.name, a.llmConfig, a.description, a.imageId,\n--   a.instructions, 0, a.tools, a.inheritInstructions, a.inheritAssistants,\n--   a.useInstructionsAsPrompt, a.welcomeMessage, a.allowedManufacturerIds,\n--   NOW(), NOW()\n-- FROM sio_llm__agent_entity a\n-- JOIN tmp_agent_map m ON a.id = m.old_id;\n\n-- Agent hierarchy\n-- INSERT INTO sio_llm__agent_hierarchy_entity\n--   (id, tenantId, parentId, orderIndex, nodeType, createdAt, updatedAt)\n-- SELECT\n--   m.new_id, @target_tenant, NULL, h.orderIndex, h.nodeType, NOW(), NOW()\n-- FROM sio_llm__agent_hierarchy_entity h\n-- JOIN tmp_agent_map m ON h.id = m.old_id;\n\n-- Agent performance\n-- INSERT INTO sio_llm__agent_performance\n--   (id, agentId, hourlyWage, evaluationDescription, createdAt, updatedAt)\n-- SELECT\n--   UUID(), m.new_id, p.hourlyWage, p.evaluationDescription, NOW(), NOW()\n-- FROM sio_llm__agent_performance p\n-- JOIN tmp_agent_map m ON p.agentId = m.old_id;\n\n-- Assistants\n-- INSERT INTO sio_llm__agent_assistant\n--   (id, tenantId, name, description, type, paramsCredentialsEnc)\n-- SELECT\n--   m.new_id, @target_tenant, a.name, a.description, a.type, a.paramsCredentialsEnc\n-- FROM sio_llm__agent_assistant a\n-- JOIN tmp_assistant_map m ON a.id = m.old_id;\n\n-- Agent <-> Assistant join table (re-link with new IDs)\n-- INSERT INTO sio_llm__agent_assistants (agent_id, assistant_id)\n-- SELECT am.new_id, asm.new_id\n-- FROM sio_llm__agent_assistants j\n-- JOIN tmp_agent_map am ON j.agent_id = am.old_id\n-- JOIN tmp_assistant_map asm ON j.assistant_id = asm.old_id;\n\n-- MCP tools\n-- INSERT INTO sio_llm__mcp_tools\n--   (id, tenantId, assistantId, name, description, enabled, createdAt, updatedAt)\n-- SELECT\n--   UUID(), @target_tenant, m.new_id, t.name, t.description, t.enabled, NOW(), NOW()\n-- FROM sio_llm__mcp_tools t\n-- JOIN tmp_assistant_map m ON t.assistantId = m.old_id;\n\n-- Assistant insights\n-- INSERT INTO sio_llm__assistant_insight\n--   (id, tenantId, assistantId, insight)\n-- SELECT\n--   UUID(), @target_tenant, m.new_id, i.insight\n-- FROM sio_llm__assistant_insight i\n-- JOIN tmp_assistant_map m ON i.assistantId = m.old_id;\n\n-- Cleanup\nDROP TEMPORARY TABLE IF EXISTS tmp_agent_ids;\nDROP TEMPORARY TABLE IF EXISTS tmp_assistant_ids;\nDROP TEMPORARY TABLE IF EXISTS tmp_agent_map;\nDROP TEMPORARY TABLE IF EXISTS tmp_assistant_map;\n\n-- NOTE: isDefault is set to 0 for copied agents to avoid conflicts.\n-- NOTE: hierarchy parentId is set to NULL (copies are placed at root level).\n-- NOTE: paramsCredentialsEnc is copied as-is \u2014 works within the same environment.\n--       Cross-environment copies need credential re-entry.",
+    "timestamp": "2026-04-08T08:44:23.502349",
+    "connection_name": "prod"
+  },
+  {
+    "query": "SELECT * FROM `sc\u2013ai_prod_sl5m`.`sio_llm___agent_entity` LIMIT 100",
+    "timestamp": "2026-04-08T08:23:02.972535",
+    "connection_name": "prod"
+  },
+  {
+    "query": "select count(*) from assetfile",
+    "timestamp": "2026-04-01T12:15:56.575464",
+    "connection_name": "prod"
+  },
+  {
+    "query": "select count(*) from file",
+    "timestamp": "2026-04-01T12:14:30.524687",
+    "connection_name": "prod"
+  },
+  {
+    "query": "SELECT file_id FROM `sc\u2013ai_prod_sl5m`.`sio_llm___ingestion_file_logs` where step = 'PROCESSING' and status = 'COMPLETED'",
+    "timestamp": "2026-03-19T08:41:15.909850",
+    "connection_name": "prod"
+  },
+  {
+    "query": "SELECT * FROM `sc\u2013ai_prod_sl5m`.`sio_llm___ingestion_file_logs` where step = 'PROCESSING' and status = 'COMPLETED'",
+    "timestamp": "2026-03-19T08:40:47.913240",
+    "connection_name": "prod"
+  },
+  {
+    "query": "SELECT * FROM `sc\u2013ai_prod_sl5m`.`sio_llm___ingestion_file_logs` LIMIT 100",
+    "timestamp": "2026-03-19T08:40:22.949285",
+    "connection_name": "prod"
+  },
+  {
+    "query": "SELECT * FROM `sc\u2013ai_prod_sl5m`.`sio_llm___ingestion_version` LIMIT 100",
+    "timestamp": "2026-03-19T08:40:21.001976",
+    "connection_name": "prod"
+  },
+  {
+    "query": "SELECT * FROM `sc\u2013ai_prod_sl5m`.`sio_llm___ingestion_file_queue` LIMIT 100",
+    "timestamp": "2026-03-19T08:40:19.337860",
+    "connection_name": "prod"
+  },
+  {
+    "query": "SELECT * FROM `sc\u2013ai_prod_sl5m`.`sio_llm___ingestion_failed_pages` LIMIT 100",
+    "timestamp": "2026-03-19T08:40:16.621766",
+    "connection_name": "prod"
+  },
+  {
+    "query": "SELECT * FROM `sweetconnect_prod_wl4h`.`file` where organization_id like '78d%'",
+    "timestamp": "2026-03-16T08:09:21.414310",
+    "connection_name": "prod"
+  },
+  {
+    "query": "select * from file where organization_id like '12a87f17-318a-4f0a-8bb4-214be1a75a50'",
+    "timestamp": "2026-03-11T13:28:13.390751",
+    "connection_name": "prod"
+  },
+  {
+    "query": "select * from file where id like 'a40fbb2a-1a2b-4f1d-8799-46ab51d1d49e'",
+    "timestamp": "2026-03-11T13:27:42.139142",
+    "connection_name": "prod"
+  },
+  {
+    "query": "select * from file where id like 'c47e46c1-a077-4d12-86fd-87264cf55f32'",
+    "timestamp": "2026-03-11T13:27:19.599549",
+    "connection_name": "prod"
+  },
+  {
+    "query": "select * from file where id like '9c02aa73-ab19-4019-9acf-ec90daa2d58b'",
+    "timestamp": "2026-03-11T11:49:21.272128",
+    "connection_name": "prod"
+  },
+  {
+    "query": "select * from file where supplier_document = 1 AND manufacturer_id IS NOT NULL",
+    "timestamp": "2026-03-11T10:49:12.675662",
+    "connection_name": "prod"
+  },
+  {
+    "query": "select count(*) from file where supplier_document = 1 AND manufacturer_id IS NOT NULL",
+    "timestamp": "2026-03-11T10:48:51.759408",
+    "connection_name": "prod"
+  },
+  {
+    "query": "select * from file where supplier_document = 1 and manufacturer_id like NULL",
+    "timestamp": "2026-03-11T10:47:54.804577",
+    "connection_name": "prod"
+  },
+  {
+    "query": "select * from file where supplier_document = 1 and manufacturer_id not like NULL",
+    "timestamp": "2026-03-11T10:47:48.052301",
+    "connection_name": "prod"
+  },
+  {
+    "query": "select * from file where supplier_document = 1",
+    "timestamp": "2026-03-11T10:36:18.300590",
+    "connection_name": "prod"
+  },
+  {
+    "query": "select * from file where displayname = 'SuperNova AMC - User Manual'",
+    "timestamp": "2026-03-10T15:16:33.042246",
+    "connection_name": "prod"
+  }
+]

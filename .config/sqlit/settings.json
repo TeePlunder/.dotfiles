@@ -1,0 +1,22 @@
+{
+  "theme": "catppuccin-mocha",
+  "expanded_nodes": [
+    "conn:Demo SQLite",
+    "conn:Demo SQLite/folder:databases",
+    "conn:Demo SQLite/folder:databases/db:main",
+    "conn:Demo SQLite/folder:databases/db:main/folder:tables",
+    "conn:Demo SQLite/folder:databases/db:main/folder:tables/table:main.users",
+    "conn:local",
+    "conn:local/folder:databases",
+    "conn:local/folder:databases/db:app",
+    "conn:local/folder:databases/db:app/folder:tables",
+    "conn:prod",
+    "conn:prod/folder:databases",
+    "conn:prod/folder:databases/db:sweetconnect_prod_wl4h",
+    "conn:prod/folder:databases/db:sweetconnect_prod_wl4h/folder:tables",
+    "conn:prod/folder:databases/db:sweetconnect_prod_wl4h/folder:tables/table:.file",
+    "conn:test",
+    "conn:test/folder:tables",
+    "conn:test/folder:tables/table:.file"
+  ]
+}

@@ -1,0 +1,133 @@
+{
+  "version": 2,
+  "connections": [
+    {
+      "name": "local",
+      "db_type": "mysql",
+      "source": null,
+      "connection_url": null,
+      "folder_path": "",
+      "extra_options": {},
+      "options": {
+        "tls_mode": "default",
+        "tls_ca": "",
+        "tls_cert": "",
+        "tls_key": "",
+        "tls_key_password": "",
+        "ssh_host": "",
+        "ssh_port": "22",
+        "ssh_username": "",
+        "ssh_auth_type": "key",
+        "ssh_key_path": "~/.ssh/id_rsa",
+        "ssh_password": ""
+      },
+      "endpoint": {
+        "kind": "tcp",
+        "host": "localhost",
+        "port": "3306",
+        "database": "",
+        "username": "root",
+        "password": null
+      },
+      "tunnel": {
+        "enabled": false
+      }
+    },
+    {
+      "name": "dev",
+      "db_type": "mysql",
+      "source": null,
+      "connection_url": null,
+      "folder_path": "",
+      "extra_options": {},
+      "options": {
+        "tls_mode": "default",
+        "tls_ca": "",
+        "tls_cert": "",
+        "tls_key": "",
+        "tls_key_password": "",
+        "ssh_host": "",
+        "ssh_port": "22",
+        "ssh_username": "",
+        "ssh_auth_type": "key",
+        "ssh_key_path": "~/.ssh/id_rsa",
+        "ssh_password": ""
+      },
+      "endpoint": {
+        "kind": "tcp",
+        "host": "mysql-sc-wlcj.mysql.database.azure.com",
+        "port": "3306",
+        "database": "sweetconnect_dev_j0jt",
+        "username": "user-xfnocu",
+        "password": null
+      },
+      "tunnel": {
+        "enabled": false
+      }
+    },
+    {
+      "name": "test",
+      "db_type": "mysql",
+      "source": null,
+      "connection_url": null,
+      "folder_path": "",
+      "extra_options": {},
+      "options": {
+        "tls_mode": "default",
+        "tls_ca": "",
+        "tls_cert": "",
+        "tls_key": "",
+        "tls_key_password": "",
+        "ssh_host": "",
+        "ssh_port": "22",
+        "ssh_username": "",
+        "ssh_auth_type": "key",
+        "ssh_key_path": "~/.ssh/id_rsa",
+        "ssh_password": ""
+      },
+      "endpoint": {
+        "kind": "tcp",
+        "host": "mysql-sc-gka5.mysql.database.azure.com",
+        "port": "3306",
+        "database": "sweetconnect_test_en1k",
+        "username": "user-ruzzzw",
+        "password": null
+      },
+      "tunnel": {
+        "enabled": false
+      }
+    },
+    {
+      "name": "prod",
+      "db_type": "mysql",
+      "source": null,
+      "connection_url": null,
+      "folder_path": "",
+      "extra_options": {},
+      "options": {
+        "tls_mode": "default",
+        "tls_ca": "",
+        "tls_cert": "",
+        "tls_key": "",
+        "tls_key_password": "",
+        "ssh_host": "",
+        "ssh_port": "22",
+        "ssh_username": "",
+        "ssh_auth_type": "key",
+        "ssh_key_path": "~/.ssh/id_rsa",
+        "ssh_password": ""
+      },
+      "endpoint": {
+        "kind": "tcp",
+        "host": "mysql-sc-gka5.mysql.database.azure.com",
+        "port": "3306",
+        "database": "",
+        "username": "sweetconnectadm",
+        "password": null
+      },
+      "tunnel": {
+        "enabled": false
+      }
+    }
+  ]
+}
