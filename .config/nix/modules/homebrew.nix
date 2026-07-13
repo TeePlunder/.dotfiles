@@ -48,6 +48,7 @@
       "lens"
       "font-symbols-only-nerd-font"
       "microsoft-teams"
+      "handy"
     ];
     masApps = {
       # "App Name" = Apple ID;
