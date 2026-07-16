@@ -20,6 +20,7 @@
       "resvg"
       "hashicorp/tap/terraform"
       "mise"
+      "exercism"
     ];
     casks = [
       "shottr"
