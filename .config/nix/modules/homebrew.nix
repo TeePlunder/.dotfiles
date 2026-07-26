@@ -25,6 +25,7 @@
         start_service = true;
       }
       "wget"
+      "exercism"
     ];
     casks = [
       "shottr"
