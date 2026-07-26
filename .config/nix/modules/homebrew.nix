@@ -48,6 +48,7 @@
       "font-symbols-only-nerd-font"
       "codex"
       "fluidvoice"
+      "wifiman"
     ];
     masApps = {
       "AusweisApp" = 948660805;
