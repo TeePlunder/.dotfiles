@@ -26,3 +26,10 @@ set -gx PATH $PATH /Users/leonbergmann/.lmstudio/bin
 
 fish_add_path ~/.local/bin
 alias db="sqlit"
+
+# pnpm
+set -gx PNPM_HOME "/Users/leonbergmann/Library/pnpm"
+if not string match -q -- "$PNPM_HOME/bin" $PATH
+  set -gx PATH "$PNPM_HOME/bin" $PATH
+end
+# pnpm end
