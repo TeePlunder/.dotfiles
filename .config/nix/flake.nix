@@ -6,6 +6,12 @@
     nix-darwin.url = "github:LnL7/nix-darwin";
     nix-darwin.inputs.nixpkgs.follows = "nixpkgs";
     nix-homebrew.url = "github:zhaofengli/nix-homebrew";
+    # track latest brew so it stays in sync with live cask API schema
+    brew-src = {
+      url = "github:Homebrew/brew";
+      flake = false;
+    };
+    nix-homebrew.inputs.brew-src.follows = "brew-src";
   };
 
   outputs = inputs@{ self, nix-darwin, nixpkgs, nix-homebrew, ... }: {
