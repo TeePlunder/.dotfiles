@@ -21,6 +21,7 @@
       "hashicorp/tap/terraform"
       "mise"
       "exercism"
+      "wget"
     ];
     casks = [
       "shottr"
