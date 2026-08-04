@@ -25,6 +25,7 @@
     entr
     k9s
     stylua
+    tree-sitter
   ];
 
   fonts.packages = [
