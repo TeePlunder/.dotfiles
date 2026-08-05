@@ -26,13 +26,8 @@
     ];
     casks = [
       "shottr"
-      "alt-tab"
-      "hiddenbar"
       "amethyst"
-      "unnaturalscrollwheels"
-      "zen"
       "bruno"
-      "trex"
       "raycast"
       "dbeaver-community"
       "docker-desktop"
@@ -41,9 +36,6 @@
       "aldente"
       "zed"
       "ghostty"
-      "appcleaner"
-      "chatgpt"
-      "visual-studio-code"
       "obsidian"
       "notion-calendar"
       "helium-browser"
