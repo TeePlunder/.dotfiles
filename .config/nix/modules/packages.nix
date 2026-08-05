@@ -27,7 +27,7 @@
     stow
     entr
     k9s
-    pipx
+    uv
     stylua
   ];
 
