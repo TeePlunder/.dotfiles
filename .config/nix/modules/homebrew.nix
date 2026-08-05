@@ -22,6 +22,7 @@
       "mise"
       "exercism"
       "wget"
+      "mole"
     ];
     casks = [
       "shottr"
