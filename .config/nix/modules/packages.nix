@@ -2,7 +2,6 @@
   nixpkgs.config.allowUnfree = true;
 
   environment.systemPackages = with pkgs; [
-    alacritty
     mkalias
     sketchybar
     bat
@@ -17,9 +16,7 @@
     yazi
     lazygit
     lazydocker
-    ffmpeg
     imagemagick
-    go
     cmake
     kubectl
     gh
