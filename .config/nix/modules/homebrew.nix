@@ -44,6 +44,7 @@
       "font-symbols-only-nerd-font"
       "microsoft-teams"
       "fluidvoice"
+      "obs"
     ];
     masApps = {
       # "App Name" = Apple ID;
