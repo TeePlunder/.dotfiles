@@ -45,7 +45,7 @@
       "microsoft-teams"
       "fluidvoice"
       "obs"
-      "capcut"
+      "losslesscut"
     ];
     masApps = {
       # "App Name" = Apple ID;
