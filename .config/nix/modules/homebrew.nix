@@ -50,6 +50,7 @@
       "codex"
       "fluidvoice"
       "wifiman"
+      "openlogi"
     ];
     masApps = {
       "AusweisApp" = 948660805;
