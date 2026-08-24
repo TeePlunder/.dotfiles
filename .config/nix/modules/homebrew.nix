@@ -30,9 +30,7 @@
     ];
     casks = [
       "shottr"
-      "alt-tab"
       "amethyst"
-      "unnaturalscrollwheels"
       "bruno"
       "raycast"
       "dbeaver-community"
@@ -43,7 +41,6 @@
       "zed"
       "ghostty"
       "obsidian"
-      "notion-calendar"
       "helium-browser"
       "claude-code"
       "font-symbols-only-nerd-font"
@@ -51,6 +48,7 @@
       "fluidvoice"
       "wifiman"
       "openlogi"
+      "vorssaint"
     ];
     masApps = {
       "AusweisApp" = 948660805;
