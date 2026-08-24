@@ -26,6 +26,7 @@
       }
       "wget"
       "exercism"
+      "mole"
     ];
     casks = [
       "shottr"
@@ -41,7 +42,6 @@
       "aldente"
       "zed"
       "ghostty"
-      "appcleaner"
       "obsidian"
       "notion-calendar"
       "helium-browser"
