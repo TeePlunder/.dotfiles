@@ -67,7 +67,7 @@
 
     onActivation.cleanup = "zap";
     onActivation.autoUpdate = false;
-    onActivation.upgrade = true;
+    onActivation.upgrade = false;
     onActivation.extraEnv = {
       HOMEBREW_NO_ANALYTICS = "1";
       HOMEBREW_NO_ENV_HINTS = "1";
