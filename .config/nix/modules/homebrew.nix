@@ -27,6 +27,7 @@
       "wget"
       "exercism"
       "mole"
+      "ollama"
     ];
     casks = [
       "shottr"
