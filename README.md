@@ -45,14 +45,14 @@ stow --adopt .
 
 Secrets (API tokens etc.) live in `~/.secrets.fish`, outside the repo. Never commit them or use `set -Ux` (writes to tracked `fish_variables`).
 
-Store tokens in the macOS Keychain (prompts for the value):
+Store tokens in the macOS Keychain. Copy the token, then run (leading space keeps it out of fish history):
 
 ```fish
-security add-generic-password -a $USER -s bitbucket-token -w
-security add-generic-password -a $USER -s jira-token -w
+ security add-generic-password -U -a $USER -s jira-token -w (pbpaste)
+ security add-generic-password -U -a $USER -s bitbucket-token -w (pbpaste)
 ```
 
-Update an existing entry by adding `-U`.
+Don't use the interactive `-w` prompt: it truncates input to 128 chars, Atlassian tokens are longer.
 
 Create the file:
 
