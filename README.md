@@ -41,6 +41,43 @@ When files already exists you can override it with
 stow --adopt .
 ```
 
+## Secrets
+
+Secrets (API tokens etc.) live in `~/.secrets.fish`, outside the repo. Never commit them or use `set -Ux` (writes to tracked `fish_variables`).
+
+Store tokens in the macOS Keychain (prompts for the value):
+
+```fish
+security add-generic-password -a $USER -s bitbucket-token -w
+security add-generic-password -a $USER -s jira-token -w
+```
+
+Update an existing entry by adding `-U`.
+
+Create the file:
+
+```fish
+set -gx BITBUCKET_USER "you"
+set -gx BITBUCKET_TOKEN (security find-generic-password -a $USER -s bitbucket-token -w 2>/dev/null)
+set -gx JIRA_BASE_URL "https://your-site.atlassian.net"
+set -gx JIRA_EMAIL "you@example.com"
+set -gx JIRA_TOKEN (security find-generic-password -a $USER -s jira-token -w 2>/dev/null)
+```
+
+Restrict permissions:
+
+```fish
+chmod 600 ~/.secrets.fish
+```
+
+`config.fish` sources it if present:
+
+```fish
+test -f ~/.secrets.fish; and source ~/.secrets.fish
+```
+
+Neovim reads them via `vim.env.*` (e.g. `nvim/lua/plugins/atlas.lua`). Restart the shell before launching nvim. Verify with `:lua print(vim.env.JIRA_TOKEN)`.
+
 ## Tutorial
 
 [The Video](https://youtu.be/y6XCebnB9gs?si=XKJVomggYPDYyLN2)
