@@ -45,19 +45,32 @@ stow --adopt .
 
 Secrets (API tokens etc.) live in `~/.secrets.fish`, outside the repo. Never commit them or use `set -Ux` (writes to tracked `fish_variables`).
 
-Store tokens in the macOS Keychain. Copy the token, then run (leading space keeps it out of fish history):
+### Create tokens
+
+Both are Atlassian API tokens, created at [id.atlassian.com → Security → API tokens](https://id.atlassian.com/manage-profile/security/api-tokens). Shown once, max 1 year expiry.
+
+- **Bitbucket:** "Create API token **with scopes**" → app Bitbucket. Scopes: `read:account`, `read:user:bitbucket`, `read:workspace:bitbucket`, `read:repository:bitbucket`, `read:pullrequest:bitbucket`, `write:pullrequest:bitbucket`, `read:pipeline:bitbucket`.
+- **Jira:** "Create API token" (unscoped works for Jira).
+
+Token must start with `ATATT`. `ATCTT` = workspace/repo access token: Bearer-only, no user, atlas gets 401.
+
+### Store in Keychain
+
+Paste token into hidden prompt (no clipboard/history mixups):
 
 ```fish
- security add-generic-password -U -a $USER -s jira-token -w (pbpaste)
- security add-generic-password -U -a $USER -s bitbucket-token -w (pbpaste)
+read -s -P "token: " t; and security add-generic-password -U -a $USER -s bitbucket-token -w $t; set -e t
+read -s -P "token: " t; and security add-generic-password -U -a $USER -s jira-token -w $t; set -e t
 ```
 
-Don't use the interactive `-w` prompt: it truncates input to 128 chars, Atlassian tokens are longer.
+Don't use `security`'s own interactive `-w` prompt: truncates input to 128 chars, Atlassian tokens are ~190.
 
-Create the file:
+### Create the file
+
+Username for both = Atlassian account email.
 
 ```fish
-set -gx BITBUCKET_USER "you"
+set -gx BITBUCKET_USER "you@example.com"
 set -gx BITBUCKET_TOKEN (security find-generic-password -a $USER -s bitbucket-token -w 2>/dev/null)
 set -gx JIRA_BASE_URL "https://your-site.atlassian.net"
 set -gx JIRA_EMAIL "you@example.com"
@@ -76,7 +89,16 @@ chmod 600 ~/.secrets.fish
 test -f ~/.secrets.fish; and source ~/.secrets.fish
 ```
 
-Neovim reads them via `vim.env.*` (e.g. `nvim/lua/plugins/atlas.lua`). Restart the shell before launching nvim. Verify with `:lua print(vim.env.JIRA_TOKEN)`.
+Neovim reads them via `vim.env.*` (e.g. `nvim/lua/plugins/atlas.lua`). Env is read at shell start: after changing a token, `exec $SHELL` and restart nvim — running shells/nvims keep the old value.
+
+### Verify
+
+```fish
+curl -s -o /dev/null -w "%{http_code}\n" -u "$BITBUCKET_USER:$BITBUCKET_TOKEN" https://api.bitbucket.org/2.0/user
+curl -s -o /dev/null -w "%{http_code}\n" -u "$JIRA_EMAIL:$JIRA_TOKEN" "$JIRA_BASE_URL/rest/api/3/myself"
+```
+
+Both should print `200`. In nvim: `:lua print(vim.env.BITBUCKET_TOKEN:sub(1, 5))` → `ATATT`.
 
 ## Tutorial
 
