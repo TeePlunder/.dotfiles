@@ -106,3 +106,7 @@ export PATH="/opt/homebrew/opt/node@20/bin:$PATH"
 
 # Created by `pipx` on 2026-02-02 14:30:16
 export PATH="$PATH:/Users/leonbergmann/.local/bin"
+
+
+# Added by Antigravity CLI installer
+export PATH="/Users/leonbergmann/.local/bin:$PATH"

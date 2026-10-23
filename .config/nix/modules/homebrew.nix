@@ -47,6 +47,7 @@
       "obs"
       "losslesscut"
       "vorssaint"
+      "antigravity"
     ];
     masApps = {
       # "App Name" = Apple ID;
