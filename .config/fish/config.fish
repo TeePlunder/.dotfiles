@@ -55,3 +55,9 @@ end
 
 /Users/leonbergmann/.local/bin/mise activate fish | source # added by https://mise.run/fish
 fish_add_path ~/.local/share/mise/shims
+
+test -f ~/.secrets.fish; and source ~/.secrets.fish
+
+
+# Added by Antigravity CLI installer
+set -gx PATH "/Users/leonbergmann/.local/bin" $PATH
